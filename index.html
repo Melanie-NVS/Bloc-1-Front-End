@@ -44,7 +44,7 @@
       <h1>Cuisine collaborative simple, gourmande et conviviale</h1>
       <p>Partagez vos recettes, découvrez de nouvelles idées, échangez avec d'autres passionnés et créez votre propre
         univers culinaire dans une ambiance moderne et chaleureuse.</p>
-      <button>Sign up today<i class="fa-solid fa-arrow-right"></i></button>
+      <button>Inscrivez-vous aujourd'hui<i class="fa-solid fa-arrow-right"></i></button>
     </div>
   </header>
 
@@ -89,32 +89,263 @@
         </div>
       </div>
       <div class="grille">
-        <!-- <div class="image-box">
-          <img src="../${recette.img}" alt="${recette.titre}">
-            <button class="coeur">
-              <i class="far fa-heart" onclick="ajouteFavoris(this)"></i>
+        <article class="carte-recette">
+          <div class="image-box">
+            <img src="./assets/img/recettes/poulet_teriyaki.png" alt="Poulet teriyaki">
+            <button class="coeur" aria-label="Ajouter aux favoris">
+              <i class="far fa-heart"></i>
             </button>
-      </div>
-      <div class="contenu">
-          <h3>${recette.titre}</h3>
+          </div>
+          <div class="contenu">
+            <h3>Poulet teriyaki</h3>
             <div class="infos">
               <div class="note">
                 <i class="fa-regular fa-star"></i>
-                <span>${Number(recette.moyenne_note).toFixed(1)} (${recette.nombre_notes})</span>
+                <span>4.8 (120)</span>
               </div>
-              <span class="auteur">par ${recette.auteur}</span>
+              <span class="auteur">
+                par Mélanie
+              </span>
             </div>
-      </div> -->
+          </div>
+        </article>
+
+        <article class="carte-recette">
+          <div class="image-box">
+            <img src="./assets/img/recettes/bruschettas_tomate.jpg" alt="Bruschettas à la tomate">
+            <button class="coeur" aria-label="Ajouter aux favoris">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="contenu">
+            <h3>Bruschettas à la tomate</h3>
+            <div class="infos">
+              <div class="note">
+                <i class="fa-regular fa-star"></i>
+                <span>4.8 (120)</span>
+              </div>
+              <span class="auteur">
+                par Céline
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-recette">
+          <div class="image-box">
+            <img src="./assets/img/recettes/burger_maison.jpg" alt="Burger maison">
+            <button class="coeur" aria-label="Ajouter aux favoris">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="contenu">
+            <h3>Burger maison</h3>
+            <div class="infos">
+              <div class="note">
+                <i class="fa-regular fa-star"></i>
+                <span>4.8 (120)</span>
+              </div>
+              <span class="auteur">
+                par Bastien
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-recette">
+          <div class="image-box">
+            <img src="./assets/img/recettes/chili_con_carne.jpg" alt="Chili con carne">
+            <button class="coeur" aria-label="Ajouter aux favoris">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="contenu">
+            <h3>Chili con carne</h3>
+            <div class="infos">
+              <div class="note">
+                <i class="fa-regular fa-star"></i>
+                <span>4.8 (120)</span>
+              </div>
+              <span class="auteur">
+                par Thomas
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-recette">
+          <div class="image-box">
+            <img src="./assets/img/recettes/couscous_legumes.jpg" alt="Couscous aux légumes">
+            <button class="coeur" aria-label="Ajouter aux favoris">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="contenu">
+            <h3>Couscous aux légumes</h3>
+            <div class="infos">
+              <div class="note">
+                <i class="fa-regular fa-star"></i>
+                <span>4.8 (120)</span>
+              </div>
+              <span class="auteur">
+                par Fabrice
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-recette">
+          <div class="image-box">
+            <img src="./assets/img/recettes/curry_pois_chiche.jpg" alt="Curry aux pois chiche">
+            <button class="coeur" aria-label="Ajouter aux favoris">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="contenu">
+            <h3>Curry aux pois chiche</h3>
+            <div class="infos">
+              <div class="note">
+                <i class="fa-regular fa-star"></i>
+                <span>4.8 (120)</span>
+              </div>
+              <span class="auteur">
+                par Léa
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-recette">
+          <div class="image-box">
+            <img src="./assets/img/recettes/brioche_perdue.jpg" alt="Brioche perdue">
+            <button class="coeur" aria-label="Ajouter aux favoris">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="contenu">
+            <h3>Brioche perdue</h3>
+            <div class="infos">
+              <div class="note">
+                <i class="fa-regular fa-star"></i>
+                <span>4.8 (120)</span>
+              </div>
+              <span class="auteur">
+                par Florence
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-recette">
+          <div class="image-box">
+            <img src="./assets/img/recettes/granola.jpg" alt="Granola">
+            <button class="coeur" aria-label="Ajouter aux favoris">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="contenu">
+            <h3>Granola</h3>
+            <div class="infos">
+              <div class="note">
+                <i class="fa-regular fa-star"></i>
+                <span>4.8 (120)</span>
+              </div>
+              <span class="auteur">
+                par Loane
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-recette">
+          <div class="image-box">
+            <img src="./assets/img/recettes/nouilles_legumes.png" alt="Nouilles aux légumes">
+            <button class="coeur" aria-label="Ajouter aux favoris">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="contenu">
+            <h3>Nouilles aux légumes</h3>
+            <div class="infos">
+              <div class="note">
+                <i class="fa-regular fa-star"></i>
+                <span>4.8 (120)</span>
+              </div>
+              <span class="auteur">
+                par Loic
+              </span>
+            </div>
+          </div>
+        </article>
       </div>
       <div class="pagination" id="pagination">
         <button id="prev">&lt;</button>
-        <div id="pagesNumbers"></div>
+        <div id="pagesNumbers">
+          <button class="page active">1</button>
+          <button class="page">2</button>
+          <button class="page">3</button>
+          <button class="page">4</button>
+        </div>
         <button id="next">&gt;</button>
       </div>
     </section>
   </section>
 
+  <section class="section-videos">
+    <div class="header-videos">
+      <h2>Vidéos</h2>
+      <button class="btn-filtre">
+        À la une
+        <span>↕</span>
+      </button>
+    </div>
 
+    <div class="grille-videos">
+      <article class="carte-video">
+        <img src="./assets/img/recettes/tiramisu.jpg" alt="Vidéo recette tiramisu">
+        <div class="btn-play">
+          <span></span>
+        </div>
+        <div class="contenu-video">
+          <h3>Recette de tiramisu maison</h3>
+          <p>par Mélanie Dupont</p>
+        </div>
+      </article>
+
+      <article class="carte-video">
+        <img src="./assets/img/recettes/pancakes.jpg" alt="Vidéo recette pancakes">
+        <div class="btn-play">
+          <span></span>
+        </div>
+        <div class="contenu-video">
+          <h3>Préparer des pancakes délicieux</h3>
+          <p>par Thomas Martin</p>
+        </div>
+      </article>
+
+      <article class="carte-video">
+        <img src="./assets/img/recettes/brioche_perdue.jpg" alt="Vidéo recette brioche perdue">
+        <div class="btn-play">
+          <span></span>
+        </div>
+        <div class="contenu-video">
+          <h3>Recette de brioche perdue</h3>
+          <p>par Julie Bernard</p>
+        </div>
+      </article>
+
+      <article class="carte-video">
+        <img src="./assets/img/recettes/brownie_noix.jpg" alt="Vidéo recette brownie aux noix">
+        <div class="btn-play">
+          <span></span>
+        </div>
+        <div class="contenu-video">
+          <h3>Recette de brownie aux noix</h3>
+          <p>par Lucas Moreau</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
   <section class="abonnement">
     <h2>Soyez les premiers informés des dernières offres, recevez de nouvelles recettes tendances et plus encore !</h2>
