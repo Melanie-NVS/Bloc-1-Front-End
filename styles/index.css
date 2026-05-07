@@ -376,16 +376,22 @@ footer h5 {
   position: absolute;
   top: 18px;
   right: 18px;
-  font-size: 1.5rem;
+  width: 34px;
+  height: 34px;
   border: none;
-  background: transparent;
-  color: #333;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.123);
+  color: #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: color 0.5s ease;
-  z-index: 7;
+  font-size: 1.4rem;
+  transition: 0.3s ease;
 }
-.recettes .coeur i {
-  color: #f5c518;
+.recettes .coeur:hover {
+  color: #da6803;
+  transform: scale(1.05);
 }
 .recettes .contenu {
   padding: 0 10px;
@@ -429,7 +435,7 @@ footer h5 {
 }
 .recettes .pagination button {
   font-family: "InterLight", serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
   padding: 7px 10px;
   border-radius: 6px;
@@ -659,13 +665,18 @@ main form .btn {
   line-height: 1.6;
   margin-bottom: 70px;
 }
+.contactForm #confirmationMessage {
+  color: green;
+  margin-top: 15px;
+  font-weight: bold;
+}
 
 .signIn {
   display: grid;
   grid-template-columns: 50% 50%;
   min-height: 800px;
   width: 90%;
-  margin: 80px auto 70px;
+  margin: 0px auto 70px;
   font-family: "PoppinsLight", serif;
 }
 .signIn .inscription {
@@ -836,18 +847,24 @@ main form .btn {
 }
 .recherche-recettes .coeur {
   position: absolute;
-  top: 18px;
-  right: 18px;
-  font-size: 1.5rem;
+  top: 12px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
   border: none;
-  background: transparent;
-  color: #333;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.123);
+  color: #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: color 0.5s ease;
-  z-index: 7;
+  font-size: 1.4rem;
+  transition: 0.3s ease;
 }
-.recherche-recettes .coeur i {
-  color: #f5c518;
+.recherche-recettes .coeur:hover {
+  color: #da6803;
+  transform: scale(1.05);
 }
 .recherche-recettes .contenu {
   padding: 0 10px;
@@ -897,7 +914,7 @@ main form .btn {
 }
 .recherche-recettes .pagination button {
   font-family: "InterLight", serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
   padding: 7px 10px;
   border-radius: 6px;
@@ -1221,7 +1238,7 @@ main form .btn {
   margin: 0 auto;
 }
 .section-autres-recettes .titre-autres-recettes {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #111;
   margin-bottom: 35px;
@@ -1238,6 +1255,7 @@ main form .btn {
   border-radius: 14px;
   overflow: hidden;
   margin-bottom: 18px;
+  cursor: pointer;
 }
 .section-autres-recettes .carte-recette .image-recette img {
   width: 100%;
@@ -1303,7 +1321,7 @@ main form .btn {
   grid-template-columns: 50% 50%;
   min-height: 800px;
   width: 90%;
-  margin: 80px auto 70px;
+  margin: 0px auto 70px;
   font-family: "PoppinsLight", serif;
 }
 .signUp .inscription {

@@ -39,9 +39,9 @@
         formulaire est fait pour vous ! Que vous soyez passionné, amateur ou curieux, n’hésitez pas à nous écrire. Nous
         serons ravis de découvrir vos idées gourmandes et de vous répondre rapidement.
       </p>
-      <button class="btn">Envoyer le message</button>
+      <button class="btn">Envoyer un message</button>
     </div>
-    <form action="">
+    <form id="contact-form">
       <label for="name">Pseudo</label>
       <input type="text" id="name" autocomplete="off" />
       <label for="email">Email</label>
@@ -49,8 +49,9 @@
       <label for="message">Message</label>
       <textarea id="message"></textarea>
       <div class="submit-container">
-        <input type="submit" class="btn" value="Send message" />
+        <input type="submit" class="btn" value="Envoyer" />
       </div>
+      <p id="confirmationMessage"></p>
     </form>
   </main>
 

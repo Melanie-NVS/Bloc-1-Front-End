@@ -350,7 +350,7 @@
   }
 
   .titre-autres-recettes {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #111;
     margin-bottom: 35px;
@@ -364,12 +364,13 @@
 
   .carte-recette {
     .image-recette {
-      position: relative;
+      position: relative; // Permet de positionner le bouton de favori par-dessus l'image
       width: 100%;
       height: 200px;
       border-radius: 14px;
       overflow: hidden; // coins arrondis appliqués à l'image
       margin-bottom: 18px;
+      cursor: pointer;
 
       img {
         width: 100%;
@@ -379,7 +380,7 @@
       }
 
       .bouton-favori {
-        position: absolute;
+        position: absolute; // Positionné par-dessus l'image
         top: 12px;
         right: 12px;
         width: 34px;
