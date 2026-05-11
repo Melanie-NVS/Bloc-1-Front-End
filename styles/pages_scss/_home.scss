@@ -478,6 +478,18 @@
     display: flex; // pour aligner l'input et le bouton sur la même ligne
     gap: 20px; // espacement entre l'input et le bouton
 
+    .label-cache {
+      position: absolute; // pour retirer le label du flux visuel tout en le laissant accessible
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden; // pour cacher le contenu qui dépasse
+      clip: rect(0, 0, 0, 0); // pour masquer complètement le label
+      white-space: nowrap;
+      border: 0;
+    }
+
     input {
       font-size: 1rem;
       padding: 15px;
