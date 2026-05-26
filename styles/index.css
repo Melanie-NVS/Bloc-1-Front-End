@@ -41,6 +41,29 @@ nav {
   background-color: rgb(255, 255, 255);
   z-index: 1000;
 }
+nav .hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+nav .hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+nav .hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+nav .hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+nav .hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 nav ul {
   display: flex;
   gap: 2.5rem;
@@ -62,18 +85,6 @@ nav ul li a:hover {
   color: #da6803;
 }
 nav ul li a.active {
-  color: #da6803;
-}
-nav ul li a.bouton-profil {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-nav ul li a.bouton-profil #nom-utilisateur-nav {
-  color: #da6803;
-}
-nav ul li a.bouton-profil i {
-  font-size: 1.4rem;
   color: #da6803;
 }
 nav ul li .btn {
@@ -98,29 +109,98 @@ nav ul li i:hover {
 
 @media screen and (max-width: 1024px) {
   nav {
-    padding: 0 20px;
+    padding: 0 24px;
   }
   nav ul {
-    gap: 1.5rem;
+    gap: 1.2rem;
   }
   nav ul li a {
     font-size: 1rem;
   }
-}
-@media screen and (max-width: 730px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 15px 20px;
-    gap: 12px;
-  }
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8rem;
-  }
-  nav ul li a {
+  nav ul li .btn {
+    padding: 7px 14px;
     font-size: 0.95rem;
+  }
+}
+@media screen and (max-width: 710px) {
+  nav {
+    padding: 0 20px;
+  }
+  nav .hamburger {
+    display: flex;
+  }
+  nav .nav-left,
+  nav .nav-right {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0 28px;
+  }
+  nav .nav-left.open,
+  nav .nav-right.open {
+    display: flex;
+  }
+  nav .nav-left li,
+  nav .nav-right li {
+    width: 100%;
+  }
+  nav .nav-left li a,
+  nav .nav-right li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 0;
+    font-size: 1.05rem;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid #f5f5f5;
+    transition: all 0.2s ease;
+  }
+  nav .nav-left li a:hover,
+  nav .nav-right li a:hover {
+    color: #da6803;
+    padding-left: 8px;
+  }
+  nav .nav-left li a.active,
+  nav .nav-right li a.active {
+    color: #da6803;
+  }
+  nav .nav-left li:has(i.fa-magnifying-glass),
+  nav .nav-right li:has(i.fa-magnifying-glass) {
+    display: none;
+  }
+  nav .nav-left li .btn,
+  nav .nav-right li .btn {
+    display: block;
+    text-align: center;
+    margin: 8px 0;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-bottom: none;
+  }
+  nav .nav-left li:last-child a,
+  nav .nav-right li:last-child a {
+    border-bottom: none;
+  }
+  nav .nav-left {
+    top: 10vh;
+  }
+  nav .nav-left li:last-child a {
+    padding-bottom: 18px;
+  }
+  nav .nav-right {
+    top: calc(10vh + 212px + 18px);
+    padding-top: 8px;
+    border-top: 2px solid #f0f0f0;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   }
 }
 .btn {
@@ -650,10 +730,6 @@ footer p {
   background-color: rgb(167.6923076923, 80, 2.3076923077);
 }
 
-/* ========================= */
-/* RESPONSIVE HOME */
-/* ========================= */
-/* Tablette */
 @media screen and (max-width: 1100px) {
   .main-header {
     height: 500px;
@@ -663,138 +739,29 @@ footer p {
     width: 500px;
   }
   .main-header p {
-    width: 480px;
     font-size: 1.1rem;
     margin-bottom: 50px;
   }
-  .Menu-carte {
-    grid-template-columns: 20% 80%;
-  }
-  .recettes .grille {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .section-videos .grille-videos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .abonnement h2 {
-    width: 90%;
-    font-size: 1.7rem;
-  }
-  .abonnement .form-abonnement input {
-    width: 400px;
-  }
 }
-@media screen and (max-width: 9300px) {
+@media screen and (max-width: 890px) {
   .main-header {
-    width: 95%;
-    height: auto;
-    min-height: 450px;
-    padding: 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
   .main-header h1 {
-    font-size: 2.3rem;
-    width: 100%;
-  }
-  .main-header p {
-    width: 100%;
-    font-size: 1rem;
-    line-height: 28px;
-  }
-  .Menu-carte {
-    grid-template-columns: 1fr;
-    width: 90%;
-  }
-  .Menu-carte .col-gauche {
     font-size: 2rem;
-    text-align: center;
-  }
-  .recettes .col-droite {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .recettes .input-search {
     width: 100%;
-    margin: 0;
-  }
-  .recettes .grille {
-    grid-template-columns: 1fr;
-  }
-  .recettes .image-box img {
-    height: 230px;
-  }
-  .section-videos {
-    padding: 30px 20px;
-  }
-  .section-videos .header-videos {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-  .section-videos .header-videos h2 {
-    font-size: 2.2rem;
-  }
-  .section-videos .grille-videos {
-    grid-template-columns: 1fr;
-  }
-  .section-videos .carte-video {
-    height: 280px;
-  }
-  .abonnement {
-    height: auto;
-    padding: 30px 20px;
-  }
-  .abonnement h2 {
-    width: 100%;
-    font-size: 1.4rem;
-    line-height: 30px;
-  }
-  .abonnement .form-abonnement {
-    flex-direction: column;
-    width: 100%;
-  }
-  .abonnement .form-abonnement input,
-  .abonnement .form-abonnement button {
-    width: 100%;
-  }
-}
-/* Petit mobile */
-@media screen and (max-width: 480px) {
-  .main-header {
-    padding: 20px;
-    border-radius: 20px;
-  }
-  .main-header h1 {
-    font-size: 1.8rem;
   }
   .main-header p {
-    font-size: 0.9rem;
-    line-height: 25px;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-bottom: 30px;
   }
-  .Menu-carte {
-    width: 95%;
-  }
-  .recettes .contenu {
-    height: auto;
-    gap: 10px;
-  }
-  .recettes .pagination {
-    flex-wrap: wrap;
-  }
-  .section-videos .header-videos h2 {
-    font-size: 1.8rem;
-  }
-  .section-videos .carte-video {
-    height: 240px;
-  }
-  .abonnement {
-    margin: 40px auto;
-  }
-  .abonnement h2 {
-    font-size: 1.2rem;
+  .main-header button {
+    font-size: 0.8rem;
   }
 }
 main {

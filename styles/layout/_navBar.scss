@@ -13,6 +13,35 @@ nav {
   background-color: rgba(255, 255, 255);
   z-index: 1000;
 
+  // Hamburger (caché par défaut)
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+
+    &.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    &.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
   ul {
     display: flex;
     gap: 2.5rem;
@@ -23,7 +52,6 @@ nav {
     li {
       list-style: none;
 
-      // Gestion des liens classiques et du bouton profil
       a {
         text-decoration: none;
         color: #333;
@@ -37,22 +65,6 @@ nav {
 
         &.active {
           color: $orange;
-        }
-
-        // Style spécifique pour le bouton quand l'utilisateur est connecté
-        &.bouton-profil {
-          display: flex;
-          align-items: center;
-          gap: 10px; // Espace entre l'icône et le pseudo
-
-          #nom-utilisateur-nav {
-            color: $orange; // Le pseudo s'affiche directement en orange
-          }
-
-          i {
-            font-size: 1.4rem; // Icône un peu plus grande pour le profil
-            color: $orange;
-          }
         }
       }
 
@@ -87,35 +99,113 @@ nav {
 
 // RESPONSIVE
 
+// Tablette
 @media screen and (max-width: 1024px) {
   nav {
-    padding: 0 20px;
-  }
+    padding: 0 24px;
 
-  nav ul {
-    gap: 1.5rem;
-  }
+    ul {
+      gap: 1.2rem;
 
-  nav ul li a {
-    font-size: 1rem;
+      li a {
+        font-size: 1rem;
+      }
+
+      li .btn {
+        padding: 7px 14px;
+        font-size: 0.95rem;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 730px) {
+// Mobile
+@media screen and (max-width: 710px) {
   nav {
-    flex-direction: column;
-    height: auto;
-    padding: 15px 20px;
-    gap: 12px;
-  }
+    padding: 0 20px;
 
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8rem;
-  }
+    .hamburger {
+      display: flex;
+    }
 
-  nav ul li a {
-    font-size: 0.95rem;
+    .nav-left,
+    .nav-right {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      padding: 0 28px;
+
+      &.open {
+        display: flex;
+      }
+
+      li {
+        width: 100%;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          padding: 16px 0;
+          font-size: 1.05rem;
+          color: #333;
+          font-weight: 600;
+          border-bottom: 1px solid #f5f5f5;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: $orange;
+            padding-left: 8px; // petit décalage au hover
+          }
+
+          &.active {
+            color: $orange;
+          }
+        }
+
+        // Cacher la loupe sur mobile (déjà dans la nav)
+        &:has(i.fa-magnifying-glass) {
+          display: none;
+        }
+
+        // Boutons pleine largeur et bien stylés
+        .btn {
+          display: block;
+          text-align: center;
+          margin: 8px 0;
+          padding: 12px 20px;
+          border-radius: 12px;
+          font-size: 1rem;
+          font-weight: 700;
+          border-bottom: none;
+        }
+      }
+
+      // Dernier li sans bordure
+      li:last-child a {
+        border-bottom: none;
+      }
+    }
+
+    .nav-left {
+      top: 10vh;
+
+      li:last-child a {
+        padding-bottom: 18px; // ← espace sous "Contact"
+      }
+    }
+
+    .nav-right {
+      top: calc(10vh + 4 * 53px + 18px);
+      padding-top: 8px;
+      border-top: 2px solid #f0f0f0;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
   }
 }

@@ -100,3 +100,26 @@ if (form && confirmation) {
     form.reset();
   });
 }
+
+// -------------------------------------------------------
+// Menu hamburger
+const hamburger = document.querySelector('.hamburger');
+const navLeft = document.querySelector('.nav-left');
+const navRight = document.querySelector('.nav-right');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  navLeft.classList.toggle('open');   // ← important
+  navRight.classList.toggle('open');  // ← important
+});
+
+// Fermer au clic sur un lien
+[navLeft, navRight].forEach(ul => {
+  ul.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLeft.classList.remove('open');
+      navRight.classList.remove('open');
+    });
+  });
+});
