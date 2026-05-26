@@ -63,3 +63,108 @@ main {
     font-weight: bold;
   }
 }
+
+// ============================================================
+// RESPONSIVE CONTACT
+// ============================================================
+
+// --- Tablette (≤ 1024px) ---
+@media screen and (max-width: 1024px) {
+
+  main {
+    grid-template-columns: 60% 40%;
+    width: 95%;
+
+    form {
+      padding: 40px 30px;
+    }
+  }
+
+  .contactForm {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// --- Petite tablette (≤ 768px) ---
+@media screen and (max-width: 768px) {
+
+  main {
+    grid-template-columns: 1fr;
+    width: 90%;
+    min-height: auto;
+
+    form {
+      padding: 40px 25px;
+      border-radius: 30px;
+      grid-template-rows: auto;
+      gap: 15px;
+
+      textarea,
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 200px;
+      }
+    }
+  }
+
+  .contactForm {
+    h1 {
+      font-size: 1.8rem;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+  }
+}
+
+// --- Mobile (≤ 480px) ---
+@media screen and (max-width: 480px) {
+
+  main {
+    width: 95%;
+
+    form {
+      padding: 30px 20px;
+      border-radius: 20px;
+
+      textarea {
+        min-height: 150px;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+
+  .contactForm {
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  }
+}

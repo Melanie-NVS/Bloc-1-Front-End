@@ -68,6 +68,12 @@
       grid-template-columns: 50% 50%;
       align-items: center;
 
+      .auteur {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
       .actions {
         display: flex;
         justify-content: flex-end;
@@ -105,7 +111,103 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "etapes     info"
+      "commentaires commentaires";
     gap: 40px;
+
+    .bloc-etapes {
+      grid-area: etapes;
+    }
+
+    .bloc-informations {
+      grid-area: info;
+    }
+
+    .bloc-commentaires-global {
+      grid-area: commentaires;
+    }
+  }
+
+  .bloc-commentaires-global {
+    width: 100%;
+
+    .titre-commentaires {
+      margin-bottom: 30px;
+      padding-top: 40px;
+      border-top: 1px solid #ddd;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    .bloc-commentaires {
+      margin-top: 50px;
+
+      .commentaire {
+        margin-bottom: 50px;
+
+        .entete-commentaire {
+          display: flex;
+          align-items: flex-start;
+          gap: 18px;
+          margin-bottom: 22px;
+
+          .avatar-commentaire {
+            width: 62px;
+            height: 62px;
+            min-width: 62px;
+            max-width: 62px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+          }
+
+          .infos-commentaire {
+            .nom-commentaire {
+              font-size: 1.7rem;
+              font-weight: 700;
+              color: #111;
+              margin-bottom: 4px;
+            }
+
+            .date-commentaire {
+              font-size: 1.2rem;
+              color: #8a8a8a;
+              margin-bottom: 8px;
+            }
+
+            .note-commentaire {
+              display: flex;
+              align-items: center;
+              gap: 4px;
+              color: #f5b301;
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .texte-commentaire {
+          font-size: 1.2rem;
+          line-height: 1.8;
+          color: #555;
+          max-width: 95%;
+        }
+      }
+
+      .commentaire-mis-en-avant {
+        background: rgba(234, 70, 11, 0.123);
+        padding: 32px 30px;
+        border-radius: 8px;
+        max-width: 82%;
+        margin-left: 100px;
+
+        .texte-commentaire {
+          max-width: 100%;
+        }
+      }
+    }
   }
 
   .titre-section {
@@ -436,6 +538,225 @@
         font-size: 1.4rem;
         color: #8b8b8b;
       }
+    }
+  }
+}
+
+// ============================================================
+// RESPONSIVE RECIPE
+// ============================================================
+
+// --- Tablette (≤ 1024px) ---
+@media screen and (max-width: 1024px) {
+
+  .fiche-recette {
+    grid-template-columns: 1fr;
+
+    .recette_image {
+      height: 450px;
+    }
+
+    .recette_contenu {
+      max-width: 100%;
+      height: auto;
+      gap: 30px;
+
+      .recette_footer {
+        .auteur {
+          align-items: center;
+        }
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .section-recette {
+    .conteneur-recette {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "etapes"
+        "info"
+        "commentaires";
+      gap: 30px;
+      max-width: 95%;
+    }
+
+    .titre-section {
+      font-size: 2.5rem;
+    }
+  }
+
+  .section-autres-recettes {
+    .grille-recettes {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+  }
+}
+
+// --- Petite tablette (≤ 768px) ---
+@media screen and (max-width: 768px) {
+
+  .fiche-recette {
+    width: 100%;
+    margin: 20px auto;
+    gap: 20px;
+
+    .recette_image {
+      height: 350px;
+      border-radius: 20px;
+    }
+
+    .recette_contenu {
+      padding: 0 15px;
+
+      h2 {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+
+      .recette_infos {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px 0;
+
+        #border {
+          padding: 0 15px;
+        }
+      }
+
+      .recette_footer {
+        grid-template-columns: 1fr;
+        gap: 15px;
+
+        .actions {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .section-recette {
+    .bloc-etapes {
+      .texte-etape {
+        margin-left: 0;
+        max-width: 100%;
+        font-size: 1rem;
+      }
+
+      .bloc-commentaires {
+        .commentaire-mis-en-avant {
+          margin-left: 0;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .bloc-informations {
+      .liste-ingredients .ingredient {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .section-autres-recettes {
+    padding: 40px 0;
+
+    .titre-autres-recettes {
+      font-size: 1.8rem;
+    }
+
+    .grille-recettes {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+}
+
+// --- Mobile (≤ 480px) ---
+@media screen and (max-width: 480px) {
+
+  .fiche-recette {
+    .recette_image {
+      height: 260px;
+      border-radius: 15px;
+    }
+
+    .recette_contenu {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .recette_infos {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        #border {
+          border: none;
+          padding: 0;
+          border-top: 1px solid rgba(128, 128, 128, 0.213);
+          border-bottom: 1px solid rgba(128, 128, 128, 0.213);
+          padding: 10px 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .section-recette {
+    .titre-section {
+      font-size: 2rem;
+    }
+
+    .bloc-etapes {
+      .texte-etape {
+        font-size: 0.95rem;
+      }
+
+      .titre-commentaires {
+        font-size: 1.5rem;
+      }
+
+      .bloc-commentaires .commentaire .entete-commentaire {
+        .infos-commentaire {
+          .nom-commentaire {
+            font-size: 1.3rem;
+          }
+
+          .date-commentaire {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .section-autres-recettes {
+    .grille-recettes {
+      grid-template-columns: 1fr;
+    }
+
+    .carte-recette .image-recette {
+      height: 180px;
     }
   }
 }

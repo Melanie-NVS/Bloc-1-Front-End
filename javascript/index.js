@@ -102,6 +102,7 @@ if (form && confirmation) {
 }
 
 // -------------------------------------------------------
+// -------------------------------------------------------
 // Menu hamburger
 const hamburger = document.querySelector('.hamburger');
 const navLeft = document.querySelector('.nav-left');
@@ -109,8 +110,8 @@ const navRight = document.querySelector('.nav-right');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
-  navLeft.classList.toggle('open');   // ← important
-  navRight.classList.toggle('open');  // ← important
+  navLeft.classList.toggle('open');
+  navRight.classList.toggle('open');
 });
 
 // Fermer au clic sur un lien
@@ -122,4 +123,13 @@ hamburger.addEventListener('click', () => {
       navRight.classList.remove('open');
     });
   });
+});
+
+// Fermer au clic en dehors de la nav
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('nav')) {
+    hamburger.classList.remove('open');
+    navLeft.classList.remove('open');
+    navRight.classList.remove('open');
+  }
 });

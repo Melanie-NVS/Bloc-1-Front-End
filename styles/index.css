@@ -242,6 +242,37 @@ footer p {
   margin: 0px 0 20px 78px;
 }
 
+@media screen and (max-width: 1024px) {
+  footer ul {
+    padding: 20px 40px 30px 40px;
+    gap: 15px;
+  }
+  footer p {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer ul {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 30px 30px 30px;
+  }
+  footer p {
+    margin-left: 30px;
+    text-align: center;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer ul {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    text-align: center;
+  }
+  footer p {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+}
 .container-socials ul {
   display: flex;
   justify-content: flex-end;
@@ -730,21 +761,54 @@ footer p {
   background-color: rgb(167.6923076923, 80, 2.3076923077);
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .main-header {
-    height: 500px;
+    height: 480px;
   }
   .main-header h1 {
-    font-size: 3rem;
-    width: 500px;
+    font-size: 2.8rem;
+    width: 600px;
+    margin-bottom: 30px;
   }
   .main-header p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    width: 430px;
     margin-bottom: 50px;
   }
+  .Menu-carte {
+    grid-template-columns: 25% 75%;
+  }
+  .recettes .input-search {
+    width: 100%;
+  }
+  .recettes .grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-videos .grille-videos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .abonnement h2 {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  .abonnement .form-abonnement {
+    flex-direction: column;
+    align-items: center;
+  }
+  .abonnement .form-abonnement input {
+    width: 100%;
+    max-width: 450px;
+  }
+  .abonnement .form-abonnement button {
+    width: 100%;
+    max-width: 450px;
+  }
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 768px) {
   .main-header {
+    height: auto;
+    padding: 40px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -754,14 +818,120 @@ footer p {
   .main-header h1 {
     font-size: 2rem;
     width: 100%;
+    margin-bottom: 20px;
   }
   .main-header p {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     width: 100%;
     margin-bottom: 30px;
   }
-  .main-header button {
-    font-size: 0.8rem;
+  .Menu-carte {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .Menu-carte .col-gauche {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Menu-carte .type-plat {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .Menu-carte .type-plat .btn-accordeon {
+    width: auto;
+    flex: 1 1 40%;
+  }
+  .recettes .col-droite {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .recettes .input-search {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .recettes .grille {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .section-videos {
+    padding: 20px;
+  }
+  .section-videos .header-videos h2 {
+    font-size: 2rem;
+  }
+  .section-videos .grille-videos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .section-videos .carte-video {
+    height: 260px;
+  }
+  .abonnement {
+    height: auto;
+    padding: 40px 20px;
+  }
+  .abonnement h2 {
+    font-size: 1.4rem;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .abonnement .form-abonnement {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .abonnement .form-abonnement input {
+    width: 100%;
+  }
+  .abonnement .form-abonnement button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-header {
+    padding: 30px 15px;
+    border-radius: 15px;
+  }
+  .main-header h1 {
+    font-size: 1.6rem;
+  }
+  .main-header p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+  .Menu-carte {
+    width: 100%;
+    margin: 30px auto 20px;
+  }
+  .Menu-carte .type-plat .btn-accordeon {
+    flex: 1 1 100%;
+  }
+  .recettes .grille {
+    grid-template-columns: 1fr;
+  }
+  .recettes .image-box img {
+    height: 220px;
+  }
+  .section-videos .header-videos {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .section-videos .header-videos h2 {
+    font-size: 1.6rem;
+  }
+  .section-videos .carte-video {
+    height: 240px;
+  }
+  .abonnement {
+    border-radius: 15px;
+    margin: 40px auto;
+  }
+  .abonnement h2 {
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
 }
 main {
@@ -823,6 +993,78 @@ main form .btn {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1024px) {
+  main {
+    grid-template-columns: 60% 40%;
+    width: 95%;
+  }
+  main form {
+    padding: 40px 30px;
+  }
+  .contactForm h1 {
+    font-size: 2.2rem;
+  }
+  .contactForm p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    width: 90%;
+    min-height: auto;
+  }
+  main form {
+    padding: 40px 25px;
+    border-radius: 30px;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+  main form textarea,
+  main form input[type=text],
+  main form input[type=email] {
+    width: 100%;
+  }
+  main form .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  .contactForm h1 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .contactForm p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  main {
+    width: 95%;
+  }
+  main form {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+  main form textarea {
+    min-height: 150px;
+  }
+  main form .btn {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0 0 0;
+  }
+  .contactForm h1 {
+    font-size: 1.5rem;
+  }
+  .contactForm p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
 .signIn {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -930,6 +1172,89 @@ main form .btn {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1024px) {
+  .signIn {
+    grid-template-columns: 55% 45%;
+    width: 95%;
+  }
+  .signIn .inscription h1 {
+    font-size: 2.2rem;
+  }
+  .signIn .imgSignUp {
+    border-radius: 30px;
+  }
+  .signIn .imgSignUp h1 {
+    margin-top: 120px;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .signIn {
+    grid-template-columns: 1fr;
+    width: 90%;
+    min-height: auto;
+    gap: 30px;
+  }
+  .signIn .inscription h1 {
+    font-size: 2rem;
+    margin: 30px auto 20px;
+    text-align: center;
+  }
+  .signIn .inscription p {
+    text-align: center;
+  }
+  .signIn .inscription form {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .signIn .inscription form input[type=text],
+  .signIn .inscription form input[type=password] {
+    width: 100%;
+    max-width: 320px;
+  }
+  .signIn .imgSignUp {
+    height: 280px;
+    width: 100%;
+    border-radius: 25px;
+  }
+  .signIn .imgSignUp h1 {
+    margin-top: 60px;
+    font-size: 2rem;
+  }
+  .signIn .imgSignUp p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .signIn {
+    width: 95%;
+    margin-bottom: 40px;
+  }
+  .signIn .inscription h1 {
+    font-size: 1.7rem;
+  }
+  .signIn .inscription p {
+    font-size: 1rem;
+  }
+  .signIn .inscription form {
+    padding: 15px;
+  }
+  .signIn .inscription form input[type=text],
+  .signIn .inscription form input[type=password] {
+    width: 100%;
+    max-width: 100%;
+  }
+  .signIn .inscription .submit-container {
+    padding: 15px;
+    width: 100%;
+  }
+  .signIn .inscription .submit-container button {
+    width: 100%;
+  }
+  .signIn .imgSignUp {
+    display: none;
+  }
+}
 .recherche-recettes {
   gap: 15px;
   width: 95%;
@@ -1090,6 +1415,57 @@ main form .btn {
   cursor: default;
 }
 
+@media screen and (max-width: 1024px) {
+  .recherche-recettes .input-search {
+    width: 100%;
+  }
+  .recherche-recettes .grille {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .recherche-recettes {
+    width: 95%;
+  }
+  .recherche-recettes .col-droite {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .recherche-recettes .input-search {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .recherche-recettes .grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recherche-recettes .image-box img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .recherche-recettes {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .recherche-recettes .grille {
+    grid-template-columns: 1fr;
+  }
+  .recherche-recettes .image-box img {
+    height: 220px;
+  }
+  .recherche-recettes .contenu {
+    height: auto;
+    padding: 10px;
+  }
+  .recherche-recettes .contenu h3 {
+    font-size: 0.95rem;
+  }
+  .recherche-recettes .contenu .infos {
+    font-size: 0.75rem;
+  }
+}
 .fiche-recette {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -1153,6 +1529,11 @@ main form .btn {
   grid-template-columns: 50% 50%;
   align-items: center;
 }
+.fiche-recette .recette_contenu .recette_footer .auteur {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 .fiche-recette .recette_contenu .recette_footer .actions {
   display: flex;
   justify-content: flex-end;
@@ -1185,7 +1566,85 @@ main form .btn {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-areas: "etapes     info" "commentaires commentaires";
   gap: 40px;
+}
+.section-recette .conteneur-recette .bloc-etapes {
+  grid-area: etapes;
+}
+.section-recette .conteneur-recette .bloc-informations {
+  grid-area: info;
+}
+.section-recette .conteneur-recette .bloc-commentaires-global {
+  grid-area: commentaires;
+}
+.section-recette .bloc-commentaires-global {
+  width: 100%;
+}
+.section-recette .bloc-commentaires-global .titre-commentaires {
+  margin-bottom: 30px;
+  padding-top: 40px;
+  border-top: 1px solid #ddd;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: 1px;
+}
+.section-recette .bloc-commentaires-global .bloc-commentaires {
+  margin-top: 50px;
+}
+.section-recette .bloc-commentaires-global .bloc-commentaires .commentaire {
+  margin-bottom: 50px;
+}
+.section-recette .bloc-commentaires-global .bloc-commentaires .commentaire .entete-commentaire {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+.section-recette .bloc-commentaires-global .bloc-commentaires .commentaire .entete-commentaire .avatar-commentaire {
+  width: 62px;
+  height: 62px;
+  min-width: 62px;
+  max-width: 62px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+}
+.section-recette .bloc-commentaires-global .bloc-commentaires .commentaire .entete-commentaire .infos-commentaire .nom-commentaire {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+.section-recette .bloc-commentaires-global .bloc-commentaires .commentaire .entete-commentaire .infos-commentaire .date-commentaire {
+  font-size: 1.2rem;
+  color: #8a8a8a;
+  margin-bottom: 8px;
+}
+.section-recette .bloc-commentaires-global .bloc-commentaires .commentaire .entete-commentaire .infos-commentaire .note-commentaire {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #f5b301;
+  font-size: 1rem;
+}
+.section-recette .bloc-commentaires-global .bloc-commentaires .commentaire .texte-commentaire {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 95%;
+}
+.section-recette .bloc-commentaires-global .bloc-commentaires .commentaire-mis-en-avant {
+  background: rgba(234, 70, 11, 0.123);
+  padding: 32px 30px;
+  border-radius: 8px;
+  max-width: 82%;
+  margin-left: 100px;
+}
+.section-recette .bloc-commentaires-global .bloc-commentaires .commentaire-mis-en-avant .texte-commentaire {
+  max-width: 100%;
 }
 .section-recette .titre-section {
   font-size: 3rem;
@@ -1468,6 +1927,148 @@ main form .btn {
   color: #8b8b8b;
 }
 
+@media screen and (max-width: 1024px) {
+  .fiche-recette {
+    grid-template-columns: 1fr;
+  }
+  .fiche-recette .recette_image {
+    height: 450px;
+  }
+  .fiche-recette .recette_contenu {
+    max-width: 100%;
+    height: auto;
+    gap: 30px;
+  }
+  .fiche-recette .recette_contenu .recette_footer .auteur {
+    align-items: center;
+  }
+  .fiche-recette .recette_contenu h2 {
+    font-size: 3rem;
+  }
+  .fiche-recette .recette_contenu p {
+    font-size: 1.2rem;
+  }
+  .section-recette .conteneur-recette {
+    grid-template-columns: 1fr;
+    grid-template-areas: "etapes" "info" "commentaires";
+    gap: 30px;
+    max-width: 95%;
+  }
+  .section-recette .titre-section {
+    font-size: 2.5rem;
+  }
+  .section-autres-recettes .grille-recettes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fiche-recette {
+    width: 100%;
+    margin: 20px auto;
+    gap: 20px;
+  }
+  .fiche-recette .recette_image {
+    height: 350px;
+    border-radius: 20px;
+  }
+  .fiche-recette .recette_contenu {
+    padding: 0 15px;
+  }
+  .fiche-recette .recette_contenu h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .fiche-recette .recette_contenu p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .fiche-recette .recette_contenu .recette_infos {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  .fiche-recette .recette_contenu .recette_infos #border {
+    padding: 0 15px;
+  }
+  .fiche-recette .recette_contenu .recette_footer {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .fiche-recette .recette_contenu .recette_footer .actions {
+    justify-content: center;
+  }
+  .section-recette .bloc-etapes .texte-etape {
+    margin-left: 0;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  .section-recette .bloc-etapes .bloc-commentaires .commentaire-mis-en-avant {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .section-recette .bloc-informations .liste-ingredients .ingredient {
+    font-size: 1rem;
+  }
+  .section-autres-recettes {
+    padding: 40px 0;
+  }
+  .section-autres-recettes .titre-autres-recettes {
+    font-size: 1.8rem;
+  }
+  .section-autres-recettes .grille-recettes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fiche-recette .recette_image {
+    height: 260px;
+    border-radius: 15px;
+  }
+  .fiche-recette .recette_contenu h2 {
+    font-size: 2rem;
+  }
+  .fiche-recette .recette_contenu p {
+    font-size: 1rem;
+  }
+  .fiche-recette .recette_contenu .recette_infos {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fiche-recette .recette_contenu .recette_infos #border {
+    border: none;
+    padding: 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.213);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.213);
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .section-recette .titre-section {
+    font-size: 2rem;
+  }
+  .section-recette .bloc-etapes .texte-etape {
+    font-size: 0.95rem;
+  }
+  .section-recette .bloc-etapes .titre-commentaires {
+    font-size: 1.5rem;
+  }
+  .section-recette .bloc-etapes .bloc-commentaires .commentaire .entete-commentaire .infos-commentaire .nom-commentaire {
+    font-size: 1.3rem;
+  }
+  .section-recette .bloc-etapes .bloc-commentaires .commentaire .entete-commentaire .infos-commentaire .date-commentaire {
+    font-size: 1rem;
+  }
+  .section-autres-recettes .grille-recettes {
+    grid-template-columns: 1fr;
+  }
+  .section-autres-recettes .carte-recette .image-recette {
+    height: 180px;
+  }
+}
 .signUp {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -1574,4 +2175,90 @@ main form .btn {
   font-size: 1.5rem;
   margin-bottom: 40px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .signUp {
+    grid-template-columns: 55% 45%;
+    width: 95%;
+  }
+  .signUp .inscription h1 {
+    font-size: 2.2rem;
+  }
+  .signUp .imgSignUp {
+    border-radius: 30px;
+  }
+  .signUp .imgSignUp h1 {
+    margin-top: 120px;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .signUp {
+    grid-template-columns: 1fr;
+    width: 90%;
+    min-height: auto;
+    gap: 30px;
+  }
+  .signUp .inscription h1 {
+    font-size: 2rem;
+    margin: 30px auto 20px;
+    text-align: center;
+  }
+  .signUp .inscription p {
+    text-align: center;
+  }
+  .signUp .inscription form {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .signUp .inscription form input[type=text],
+  .signUp .inscription form input[type=password],
+  .signUp .inscription form input[type=email] {
+    width: 100%;
+    max-width: 320px;
+  }
+  .signUp .imgSignUp {
+    height: 280px;
+    width: 100%;
+    border-radius: 25px;
+  }
+  .signUp .imgSignUp h1 {
+    margin-top: 60px;
+    font-size: 2rem;
+  }
+  .signUp .imgSignUp p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .signUp {
+    width: 95%;
+    margin-bottom: 40px;
+  }
+  .signUp .inscription h1 {
+    font-size: 1.7rem;
+  }
+  .signUp .inscription p {
+    font-size: 1rem;
+  }
+  .signUp .inscription form {
+    padding: 15px;
+  }
+  .signUp .inscription form input[type=text],
+  .signUp .inscription form input[type=password],
+  .signUp .inscription form input[type=email] {
+    width: 100%;
+    max-width: 100%;
+  }
+  .signUp .inscription .submit-container {
+    padding: 15px;
+    width: 100%;
+  }
+  .signUp .inscription .submit-container button {
+    width: 100%;
+  }
+  .signUp .imgSignUp {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

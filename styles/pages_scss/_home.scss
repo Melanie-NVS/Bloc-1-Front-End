@@ -525,25 +525,74 @@
 
 // RESPONSIVE HOME 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
+
   .main-header {
-    height: 500px;
+    height: 480px;
 
     h1 {
-      font-size: 3rem;
-      width: 500px;
+      font-size: 2.8rem;
+      width: 600px;
+      margin-bottom: 30px;
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: 1rem;
+      width: 430px;
       margin-bottom: 50px;
+    }
+  }
+
+  .Menu-carte {
+    grid-template-columns: 25% 75%;
+  }
+
+  .recettes {
+    .input-search {
+      width: 100%;
+    }
+
+    .grille {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .section-videos {
+    .grille-videos {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
+  .abonnement {
+    h2 {
+      width: 100%;
+      font-size: 1.6rem;
+    }
+
+    .form-abonnement {
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        width: 100%;
+        max-width: 450px;
+      }
+
+      button {
+        width: 100%;
+        max-width: 450px;
+      }
     }
   }
 }
 
-@media screen and (max-width: 890px) {
+// --- Petite tablette (≤ 768px) ---
+@media screen and (max-width: 768px) {
 
   .main-header {
+    height: auto;
+    padding: 40px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -553,18 +602,159 @@
     h1 {
       font-size: 2rem;
       width: 100%;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 0.8rem;
+      font-size: 0.95rem;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .Menu-carte {
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    .col-gauche {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .type-plat {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .btn-accordeon {
+        width: auto;
+        flex: 1 1 40%;
+      }
+    }
+  }
+
+  .recettes {
+    .col-droite {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .input-search {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+
+    .grille {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  }
+
+  .section-videos {
+    padding: 20px;
+
+    .header-videos {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .grille-videos {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .carte-video {
+      height: 260px;
+    }
+  }
+
+  .abonnement {
+    height: auto;
+    padding: 40px 20px;
+
+    h2 {
+      font-size: 1.4rem;
       width: 100%;
       margin-bottom: 30px;
     }
 
-    button {
-      font-size: 0.8rem;
+    .form-abonnement {
+      width: 100%;
+      flex-direction: column;
+      gap: 15px;
+
+      input {
+        width: 100%;
+      }
+
+      button {
+        width: 100%;
+      }
     }
   }
 }
 
-@media screen and (max-width: 890px) {}
+// --- Mobile (≤ 480px) ---
+@media screen and (max-width: 480px) {
+
+  .main-header {
+    padding: 30px 15px;
+    border-radius: 15px;
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+  }
+
+  .Menu-carte {
+    width: 100%;
+    margin: 30px auto 20px;
+
+    .type-plat .btn-accordeon {
+      flex: 1 1 100%;
+    }
+  }
+
+  .recettes {
+    .grille {
+      grid-template-columns: 1fr;
+    }
+
+    .image-box img {
+      height: 220px;
+    }
+  }
+
+  .section-videos {
+    .header-videos {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    .carte-video {
+      height: 240px;
+    }
+  }
+
+  .abonnement {
+    border-radius: 15px;
+    margin: 40px auto;
+
+    h2 {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+  }
+}

@@ -183,3 +183,79 @@
 }
 
 //Fin carte recette
+
+// ============================================================
+// RESPONSIVE SEARCH
+// ============================================================
+
+// --- Tablette (≤ 1024px) ---
+@media screen and (max-width: 1024px) {
+
+  .recherche-recettes {
+    .input-search {
+      width: 100%;
+    }
+
+    .grille {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+  }
+}
+
+// --- Petite tablette (≤ 768px) ---
+@media screen and (max-width: 768px) {
+
+  .recherche-recettes {
+    width: 95%;
+
+    .col-droite {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .input-search {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .grille {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-box img {
+      height: 200px;
+    }
+  }
+}
+
+// --- Mobile (≤ 480px) ---
+@media screen and (max-width: 480px) {
+
+  .recherche-recettes {
+    width: 100%;
+    padding: 0 10px;
+
+    .grille {
+      grid-template-columns: 1fr;
+    }
+
+    .image-box img {
+      height: 220px;
+    }
+
+    .contenu {
+      height: auto;
+      padding: 10px;
+
+      h3 {
+        font-size: 0.95rem;
+      }
+
+      .infos {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
