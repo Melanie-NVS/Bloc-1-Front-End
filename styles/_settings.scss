@@ -13,6 +13,12 @@
   src: url(../assets/fonts/Poppins-Light.ttf);
 }
 
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url(../assets/fonts/OpenDyslexic-Regular.otf);
+}
+
+$fontDyslexic: "OpenDyslexic", sans-serif;
 $font1: "InterLight", serif;
 $font2: "PoppinsLight", serif;
 $font3: "AlluraRegular", serif;
@@ -31,6 +37,21 @@ li {
 
 body {
   padding-top: 120px;
+}
+
+body.dyslexic {
+  font-family: "OpenDyslexic", sans-serif !important;
+
+  * {
+    font-family: "OpenDyslexic", sans-serif !important;
+  }
+}
+
+// Accessibilité - navigation clavier
+*:focus-visible {
+  outline: 3px solid $orange;
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 // @mixin flexCenter {

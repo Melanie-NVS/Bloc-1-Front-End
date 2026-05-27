@@ -133,3 +133,62 @@ document.addEventListener('click', (e) => {
     navRight.classList.remove('open');
   }
 });
+
+//-------------------------------------------------------
+// Bouton pour activer la police pour dyslexiques
+const btnDyslexie = document.getElementById('btn-dyslexie');
+
+if (btnDyslexie) {
+  btnDyslexie.addEventListener('click', () => {
+    document.body.classList.toggle('dyslexic');
+    btnDyslexie.classList.toggle('active');
+  });
+}
+
+//-------------------------------------------------------
+// -------------------------------------------------------
+// -------------------------------------------------------
+// Chargement des recettes via fetch (requête asynchrone)
+const estDansSousPage = window.location.pathname.includes('pages_html');
+const chemin = estDansSousPage ? '../recettes.json' : './recettes.json';
+const prefixeImage = estDansSousPage ? '../' : './';
+
+const grille = document.querySelector('.grille'); 
+
+if (grille) {
+  fetch(chemin)
+    .then(response => response.json())
+    .then(recettes => {
+      const nombre = estDansSousPage ? 12 : 9;
+      recettes.slice(0, nombre).forEach(recette => {
+        const carte = document.createElement('article');
+        carte.classList.add('carte-recette');
+
+        carte.innerHTML = `
+          <div class="image-box">
+            <a href="${estDansSousPage ? './recipe.html' : './pages_html/recipe.html'}">
+              <img src="${prefixeImage}${recette.image}" alt="${recette.titre}">
+            </a>
+            <button class="coeur" aria-label="Ajouter aux favoris">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+          </div>
+          <div class="contenu">
+            <h3>${recette.titre}</h3>
+            <div class="infos">
+              <div class="note" aria-label="Note : ${recette.note} sur 5">
+                <i class="fa-regular fa-star" aria-hidden="true"></i>
+                <span>${recette.note} (${recette.votes})</span>
+              </div>
+              <span class="auteur">par ${recette.auteur}</span>
+            </div>
+          </div>
+        `;
+
+        grille.appendChild(carte);
+      });
+    })
+    .catch(error => {
+      console.error('Erreur lors du chargement des recettes :', error);
+    });
+}

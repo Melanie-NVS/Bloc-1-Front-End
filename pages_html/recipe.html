@@ -12,7 +12,35 @@
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
+  <link rel="canonical" href="https://CuisineCollab.com/pages_html/recipe.html">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
   <link rel="stylesheet" href="../styles/index.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Recipe",
+  "name": "Tiramisu Classique Italien",
+  "description": "Le tiramisu est un dessert italien onctueux et gourmand...",
+  "image": "../assets/img/recettes/tiramisu.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Alex Williams"
+  },
+  "prepTime": "PT30M",
+  "totalTime": "PT4H30M",
+  "recipeYield": "6 personnes",
+  "recipeIngredient": [
+    "250g de mascarpone",
+    "3 oeufs",
+    "80g de sucre",
+    "200g de biscuits",
+    "25cl de café fort"
+  ]
+}
+</script>
+
 </head>
 
 <body>
@@ -32,10 +60,19 @@
       <li>
         <a href="#"><i class="fas fa-magnifying-glass"></i></a>
       </li>
+      <li>
+        <button id="btn-dyslexie" aria-label="Activer la police pour dyslexiques">Aa</button>
+      </li>
       <li><a href="./signIn.html" class="btn">Se connecter</a></li>
       <li><a href="./signUp.html" class="btn">S'inscrire</a></li>
     </ul>
   </nav>
+
+  <div class="ancres">
+    <a href="#etapes">Étapes</a>
+    <a href="#ingredients">Ingrédients</a>
+    <a href="#commentaires">Commentaires</a>
+  </div>
 
   <!-- Fiche recette : image + infos principales -->
   <section class="fiche-recette">
@@ -94,7 +131,7 @@
     <div class="conteneur-recette">
 
       <!-- Colonne gauche : étapes -->
-      <div class="bloc-etapes">
+      <div class="bloc-etapes" id="etapes">
         <h2 class="titre-section">Comment faire ?</h2>
 
         <div class="etape">
@@ -164,7 +201,7 @@
       <!-- Fin bloc-etapes -->
 
       <!-- Colonne droite : ingrédients, tags, partage -->
-      <aside class="bloc-informations">
+      <aside class="bloc-informations" id="ingredients">
         <h2 class="titre-section">Ingrédients</h2>
 
         <ul class="liste-ingredients">
@@ -210,7 +247,7 @@
       <!-- Fin bloc-informations -->
 
       <!-- Pleine largeur : commentaires -->
-      <div class="bloc-commentaires-global">
+      <div class="bloc-commentaires-global" id="commentaires">
         <h2 class="titre-commentaires">Commentaires</h2>
 
         <div class="bloc-commentaires">
@@ -444,20 +481,16 @@
 
   <footer>
     <ul>
-      <li>Presentations</li>
-      <li>Professionals</li>
-      <li>Stores</li>
-      <li>Webinars</li>
-      <li>Workshops</li>
-      <li>Local Meetups</li>
-      <li>Our Initiatives</li>
-      <li>Giving Back</li>
-      <li>Communities</li>
-      <li>Contact Form</li>
-      <li>Work With Us</li>
-      <li>Visit Us</li>
+      <li>À propos</li>
+      <li>Nos recettes</li>
+      <li>Contact</li>
+      <li>Mentions légales</li>
+      <li>Politique de confidentialité</li>
+      <li>FAQ</li>
+      <li>Partenaires</li>
+      <li>Blog</li>
     </ul>
-    <p>Made by in Guatemala City.</p>
+    <p>© 2026 Cuisine Collab — Fait par Mélanie</p>
   </footer>
 
   <script src="../Javascript/index.js"></script>

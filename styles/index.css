@@ -11,6 +11,10 @@
   font-family: "PoppinsLight";
   src: url(../assets/fonts/Poppins-Light.ttf);
 }
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url(../assets/fonts/OpenDyslexic-Regular.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +28,19 @@ li {
 
 body {
   padding-top: 120px;
+}
+
+body.dyslexic {
+  font-family: "OpenDyslexic", sans-serif !important;
+}
+body.dyslexic * {
+  font-family: "OpenDyslexic", sans-serif !important;
+}
+
+*:focus-visible {
+  outline: 3px solid #da6803;
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 nav {
@@ -122,7 +139,7 @@ nav ul li i:hover {
     font-size: 0.95rem;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 744px) {
   nav {
     padding: 0 20px;
   }
@@ -202,6 +219,12 @@ nav ul li i:hover {
     border-top: 2px solid #f0f0f0;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   }
+  nav .nav-right li:has(#btn-dyslexie) {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #f5f5f5;
+  }
 }
 .btn {
   background: #da6803;
@@ -219,6 +242,30 @@ nav ul li i:hover {
   color: rgba(10, 10, 10, 0.574);
   transform: scale(1.03);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#btn-dyslexie {
+  display: inline-block;
+  background: transparent;
+  color: #333;
+  border: 2px solid #333;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#btn-dyslexie:hover {
+  background: #333;
+  color: white;
+  transform: scale(1.03);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#btn-dyslexie.active {
+  background: #da6803;
+  color: white;
+  border-color: #da6803;
 }
 
 footer {
@@ -954,6 +1001,13 @@ main form {
   border-radius: 50px;
   color: white;
 }
+main form input::-moz-placeholder, main form textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+main form input::placeholder,
+main form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
 main form textarea,
 main form input[type=text],
 main form input[type=email] {
@@ -1144,7 +1198,7 @@ main form .btn {
   color: black;
 }
 .signIn .inscription form textarea,
-.signIn .inscription form input[type=text],
+.signIn .inscription form input[type=email],
 .signIn .inscription form input[type=password] {
   border: rgba(128, 128, 128, 0.226) 1px solid;
   border-radius: 150px;
@@ -1473,6 +1527,25 @@ main form .btn {
     font-size: 0.75rem;
   }
 }
+.ancres {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 15px 0;
+  font-family: "PoppinsLight", serif;
+  border-bottom: 1px solid #eee;
+}
+.ancres a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+.ancres a:hover {
+  color: #da6803;
+}
+
 .fiche-recette {
   display: grid;
   grid-template-columns: 50% 50%;

@@ -1,0 +1,86 @@
+[
+  {
+    "titre": "Poulet teriyaki",
+    "image": "assets/img/recettes/poulet_teriyaki.png",
+    "note": "4.8",
+    "votes": "110",
+    "auteur": "Mélanie"
+  },
+  {
+    "titre": "Bruschettas à la tomate",
+    "image": "assets/img/recettes/bruschettas_tomate.jpg",
+    "note": "4.8",
+    "votes": "120",
+    "auteur": "Céline"
+  },
+  {
+    "titre": "Burger maison",
+    "image": "assets/img/recettes/burger_maison.jpg",
+    "note": "4.8",
+    "votes": "160",
+    "auteur": "Bastien"
+  },
+  {
+    "titre": "Chili con carne",
+    "image": "assets/img/recettes/chili_con_carne.jpg",
+    "note": "4.8",
+    "votes": "125",
+    "auteur": "Thomas"
+  },
+  {
+    "titre": "Couscous aux légumes",
+    "image": "assets/img/recettes/couscous_legumes.jpg",
+    "note": "4.8",
+    "votes": "114",
+    "auteur": "Fabrice"
+  },
+  {
+    "titre": "Curry aux pois chiche",
+    "image": "assets/img/recettes/curry_pois_chiche.jpg",
+    "note": "4.8",
+    "votes": "102",
+    "auteur": "Léa"
+  },
+  {
+    "titre": "Brioche perdue",
+    "image": "assets/img/recettes/brioche_perdue.jpg",
+    "note": "4.8",
+    "votes": "187",
+    "auteur": "Florence"
+  },
+  {
+    "titre": "Granola",
+    "image": "assets/img/recettes/granola.jpg",
+    "note": "4.8",
+    "votes": "145",
+    "auteur": "Loane"
+  },
+  {
+    "titre": "Nouilles aux légumes",
+    "image": "assets/img/recettes/nouilles_legumes.png",
+    "note": "4.8",
+    "votes": "127",
+    "auteur": "Loic"
+  },
+  {
+    "titre": "Poulet rôti",
+    "image": "assets/img/recettes/poulet_roti.png",
+    "note": "4.8",
+    "votes": "124",
+    "auteur": "Manuel"
+  },
+  {
+    "titre": "Poelée aux légumes",
+    "image": "assets/img/recettes/poelee_legumes_soleil.jpg",
+    "note": "4.8",
+    "votes": "132",
+    "auteur": "Lydie"
+  },
+  {
+    "titre": "Poulet au citron",
+    "image": "assets/img/recettes/poulet_citron.png",
+    "note": "4.8",
+    "votes": "141",
+    "auteur": "Liyana"
+  }
+]

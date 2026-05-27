@@ -10,6 +10,9 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <link rel="canonical" href="https://CuisineCollab.com/pages_html/search.html">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
   <link rel="stylesheet" href="../styles/index.css">
 </head>
 
@@ -30,6 +33,9 @@
       <li>
         <a href="#"><i class="fas fa-magnifying-glass"></i></a>
       </li>
+      <li>
+        <button id="btn-dyslexie" aria-label="Activer la police pour dyslexiques">Aa</button>
+      </li>
       <li><a href="./signIn.html" class="btn">Se connecter</a></li>
       <li><a href="./signUp.html" class="btn">S'inscrire</a></li>
     </ul>
@@ -49,7 +55,7 @@
       </div>
     </div>
     <div class="grille">
-      <article class="carte-recette">
+      <!-- <article class="carte-recette">
         <div class="image-box">
           <a href="./recipe.html">
             <img src="../assets/img/recettes/poulet_teriyaki.png" alt="Poulet teriyaki">
@@ -62,7 +68,7 @@
           <h3>Poulet teriyaki</h3>
           <div class="infos">
             <div class="note">
-              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star" aria-hidden="true"></i>
               <span>4.8 (120)</span>
             </div>
             <span class="auteur">
@@ -70,260 +76,7 @@
             </span>
           </div>
         </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/bruschettas_tomate.jpg" alt="Bruschettas à la tomate">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Bruschettas à la tomate</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Céline
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/burger_maison.jpg" alt="Burger maison">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Burger maison</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Bastien
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/chili_con_carne.jpg" alt="Chili con carne">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Chili con carne</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Thomas
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/couscous_legumes.jpg" alt="Couscous aux légumes">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Couscous aux légumes</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Fabrice
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/curry_pois_chiche.jpg" alt="Curry aux pois chiche">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Curry aux pois chiche</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Léa
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/brioche_perdue.jpg" alt="Brioche perdue">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Brioche perdue</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Florence
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/granola.jpg" alt="Granola">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Granola</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Loane
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/nouilles_legumes.png" alt="Nouilles aux légumes">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Nouilles aux légumes</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Loic
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/poulet_roti.png" alt="Poulet rôti">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Poulet rôti</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Manuel
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/poelee_legumes_soleil.jpg" alt="Poelee aux légumes">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Poelee aux légumes</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Lydie
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <article class="carte-recette">
-        <div class="image-box">
-          <a href="./recipe.html">
-            <img src="../assets/img/recettes/poulet_citron.png" alt="Poulet au citron">
-          </a>
-          <button class="coeur" aria-label="Ajouter aux favoris">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-        </div>
-        <div class="contenu">
-          <h3>Poulet au citron</h3>
-          <div class="infos">
-            <div class="note">
-              <i class="fa-regular fa-star"></i>
-              <span>4.8 (120)</span>
-            </div>
-            <span class="auteur">
-              par Liyana
-            </span>
-          </div>
-        </div>
-      </article>
+      </article> -->
     </div>
     <div class="pagination" id="pagination">
       <button id="prev">&lt;</button>
@@ -359,20 +112,16 @@
   </div>
   <footer>
     <ul>
-      <li>Presentations</li>
-      <li>Professionals</li>
-      <li>Stores</li>
-      <li>Webinars</li>
-      <li>Workshops</li>
-      <li>Local Meetups</li>
-      <li>Our Initiatives</li>
-      <li>Giving Back</li>
-      <li>Communities</li>
-      <li>Contact Form</li>
-      <li>Work With Us</li>
-      <li>Visit Us</li>
+      <li>À propos</li>
+      <li>Nos recettes</li>
+      <li>Contact</li>
+      <li>Mentions légales</li>
+      <li>Politique de confidentialité</li>
+      <li>FAQ</li>
+      <li>Partenaires</li>
+      <li>Blog</li>
     </ul>
-    <p>Made by in Guatemala City.</p>
+    <p>© 2026 Cuisine Collab — Fait par Mélanie</p>
   </footer>
   <script src="../Javascript/index.js"></script>
 </body>

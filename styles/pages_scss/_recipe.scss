@@ -1,3 +1,24 @@
+.ancres {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 15px 0;
+  font-family: $font2;
+  border-bottom: 1px solid #eee;
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
 .fiche-recette {
   display: grid;
   grid-template-columns: 50% 50%;
