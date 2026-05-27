@@ -11,6 +11,16 @@ footer {
     li {
       list-style: none;
       font-weight: 600;
+
+      a {
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $orange;
+        }
+      }
     }
   }
 
