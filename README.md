@@ -2,7 +2,7 @@
 
 ## Présentation du projet
 
-Cuisine Collab est un site web statique de partage de recettes de cuisine réalisé dans le cadre du **Bloc 1 – Développement Front-End de sites et applications web**.
+Cuisine Collab est un site web de partage de recettes de cuisine réalisé dans le cadre du **Bloc 1 – Développement Front-End de sites et applications web**.
 
 Le projet a été développé uniquement avec :
 - HTML5
@@ -18,40 +18,47 @@ Le site ne possède pas de base de données ni de back-end : toutes les fonction
 # Fonctionnalités du site
 
 ## Accueil
-- Présentation du site
-- Affichage dynamique des recettes chargées via `fetch()` depuis un fichier JSON
-- Navigation principale responsive
-
-## Recherche
-- Barre de recherche de recettes
-- Filtrage par type de plat (accordéon interactif)
+- Présentation du site avec image d'en-tête
+- Affichage dynamique des recettes chargées via `fetch()` depuis un fichier JSON (96 recettes)
+- Pagination dynamique avec mémorisation de la page dans l'URL (`?page=`)
+- Gestion du bouton retour navigateur (`popstate`)
+- Filtrage des recettes par catégorie (`data-categorie`)
+- Filtrage par type de plat via accordéon interactif
 - Système de tri dynamique (Récent, Entrée, Plat, Dessert)
-- Pagination dynamique
+- Barre de recherche en temps réel par titre de recette
+- Section vidéos
+- Formulaire d'abonnement newsletter
+- Navigation principale responsive avec menu hamburger
 
-## Recette
-- Affichage détaillé d'une recette (ingrédients, étapes, commentaires)
+## Page Recherche
+- Affichage de 12 recettes par page avec pagination dynamique
+- Filtrage par catégorie, type de plat et recherche combinables
+- Tri dynamique des résultats
+
+## Page Recette
+- Affichage détaillé d'une recette (image, description, ingrédients, étapes, commentaires)
 - Navigation rapide par ancres (`#etapes`, `#ingredients`, `#commentaires`)
-- Données structurées Schema.org pour le référencement
+- Données structurées Schema.org (`Recipe`) pour le référencement Google
+- Section "Autres recettes que vous aimerez"
 
 ## Favoris
-- Ajout visuel de recettes en favoris avec une icône cœur (toggle)
+- Ajout visuel de recettes en favoris avec une icône cœur (toggle plein/vide)
 
-## Connexion
-- Formulaire de connexion avec validation HTML5
-
-## Inscription
-- Formulaire d'inscription avec validation HTML5
+## Connexion & Inscription
+- Formulaires avec validation HTML5
+- Champs `type="email"` et attributs `required` et `minlength`
 
 ## Contact
-- Formulaire de contact avec validation en temps réel (HTML5)
+- Formulaire de contact avec validation HTML5
 - Message de confirmation à l'envoi
 
 ## Accessibilité
-- Police OpenDyslexic activable via un bouton "Aa" dans la navigation
-- Navigation complète au clavier avec style `:focus-visible`
-- `aria-label` sur tous les éléments interactifs (boutons icônes, liens, notes)
-- `aria-hidden="true"` sur les icônes décoratives
+- Police OpenDyslexic activable via un bouton "Aa" dans la navigation (toggle avec état visuel actif)
+- Navigation complète au clavier avec style `:focus-visible` sur tous les éléments interactifs
+- `aria-label` sur tous les éléments interactifs (boutons icônes, liens réseaux sociaux, notes)
+- `aria-hidden="true"` sur les icônes décoratives (Font Awesome)
 - Balises sémantiques HTML5 (`header`, `nav`, `main`, `section`, `article`, `aside`, `footer`)
+- Informations importantes non transmises uniquement par la couleur
 
 ---
 
@@ -59,7 +66,7 @@ Le site ne possède pas de base de données ni de back-end : toutes les fonction
 
 | Page | Description |
 |---|---|
-| `index.html` | Page d'accueil avec recettes et vidéos |
+| `index.html` | Page d'accueil avec recettes, vidéos et abonnement |
 | `search.html` | Recherche et filtrage de recettes |
 | `recipe.html` | Détail complet d'une recette |
 | `signIn.html` | Connexion utilisateur |
@@ -79,13 +86,13 @@ Le site ne possède pas de base de données ni de back-end : toutes les fonction
 ## Librairies
 - Font Awesome 7 (icônes)
 - Google Fonts (Inter, Poppins, Allura)
-- OpenDyslexic (accessibilité)
+- OpenDyslexic (accessibilité dyslexie)
 
 ## Outils
 - Visual Studio Code
 - Git & GitHub
 - Live Server (extension VSCode)
-- Node.js + npm (pour compiler le SCSS)
+- Node.js + npm (compilation SCSS)
 
 ---
 
@@ -94,9 +101,9 @@ Le site ne possède pas de base de données ni de back-end : toutes les fonction
 ## Qu'est-ce que SCSS ?
 
 SCSS (Sassy CSS) est un **préprocesseur CSS** qui étend les possibilités du CSS classique en ajoutant :
-- des **variables** (`$orange`, `$font1`…)
+- des **variables** (`$orange`, `$font1`, `$font2`…)
 - des **règles imbriquées** (nesting)
-- des **fichiers partiels** (découpage du code en plusieurs fichiers `_nomFichier.scss`)
+- des **fichiers partiels** (découpage en plusieurs fichiers `_nomFichier.scss`)
 - des **mixins** et fonctions réutilisables
 
 Le navigateur ne comprend pas le SCSS directement — il faut le **compiler en CSS**.
@@ -143,19 +150,21 @@ sass --watch styles/index.scss styles/index.css
 
 Laisser ce terminal ouvert pendant le développement.
 
+> ⚠️ Ne jamais modifier `index.css` directement — ce fichier est généré automatiquement par la compilation SCSS.
+
 ## Structure SCSS du projet
 
 ```txt
 styles/
 │
-├── _settings.scss          → Variables globales (couleurs, polices, accessibilité)
+├── _settings.scss          → Variables globales (couleurs, polices, focus, dyslexie)
 │
 ├── components/
 │   ├── _button.scss        → Styles des boutons
 │   └── _socials.scss       → Styles des réseaux sociaux
 │
 ├── layout/
-│   ├── _navBar.scss        → Styles de la navigation
+│   ├── _navBar.scss        → Styles de la navigation + menu hamburger
 │   └── _footer.scss        → Styles du footer
 │
 ├── pages_scss/
@@ -169,8 +178,6 @@ styles/
 ├── index.scss              → Fichier principal qui importe tous les partiels
 └── index.css               → Fichier compilé (ne pas modifier directement)
 ```
-
-> ⚠️ Ne jamais modifier `index.css` directement — ce fichier est généré automatiquement par la compilation SCSS.
 
 ---
 
@@ -195,7 +202,7 @@ Un menu hamburger est intégré pour les écrans mobiles (≤ 744px).
 |---|---|
 | Balises sémantiques | `header`, `nav`, `main`, `section`, `article`, `aside`, `footer` |
 | Textes alternatifs | Attributs `alt` sur toutes les images |
-| Police dyslexiques | OpenDyslexic activable via bouton "Aa" |
+| Police dyslexiques | OpenDyslexic activable via bouton "Aa" (toggle avec état actif en orange) |
 | Navigation clavier | Style `:focus-visible` sur tous les éléments interactifs |
 | Lecteurs d'écran | `aria-label` sur boutons icônes, `aria-hidden` sur icônes décoratives |
 | Contraste des couleurs | Textes lisibles sur tous les fonds |
@@ -231,6 +238,8 @@ Un menu hamburger est intégré pour les écrans mobiles (≤ 744px).
 | Navigation clavier | Test manuel (Tab, Entrée, Espace) |
 | Compatibilité navigateurs | Chrome, Firefox, Edge |
 | Police OpenDyslexic | Test manuel bouton "Aa" |
+| Fetch JSON | Test avec Live Server |
+| Filtres et pagination | Test manuel sur toutes les catégories |
 
 ---
 
@@ -241,11 +250,18 @@ Bloc-1-Front-End/
 │
 ├── assets/
 │   ├── fonts/
-│   │   └── OpenDyslexic-Regular.otf
+│   │   ├── Allura-Regular.ttf
+│   │   ├── Inter_18pt-Regular.ttf
+│   │   ├── OpenDyslexic-Regular.otf
+│   │   └── Poppins-Regular.ttf
 │   └── img/
-│       └── recettes/
+│       ├── buffetcrush.jpg
+│       ├── femme.jpg
+│       ├── homme.jpg
+│       ├── woman.jpg
+│       └── recettes/         → 96 images de recettes
 │
-├── Javascript/
+├── javascript/
 │   └── index.js
 │
 ├── pages_html/
@@ -258,7 +274,6 @@ Bloc-1-Front-End/
 ├── styles/
 │   ├── components/
 │   │   ├── _button.scss
-│   │   ├── _carousel.scss
 │   │   └── _socials.scss
 │   ├── layout/
 │   │   ├── _navBar.scss
@@ -309,7 +324,7 @@ Utiliser l'extension **Live Server** sur Visual Studio Code :
 - Clic droit sur `index.html`
 - Sélectionner **Open with Live Server**
 
-> ⚠️ Ne pas ouvrir `index.html` directement dans le navigateur (double-clic) — le `fetch()` ne fonctionnera pas sans serveur local.
+> ⚠️ Ne pas ouvrir `index.html` directement dans le navigateur (double-clic) — le `fetch()` ne fonctionnera pas sans serveur local. L'URL doit commencer par `http://127.0.0.1` et non `file://`.
 
 ---
 
