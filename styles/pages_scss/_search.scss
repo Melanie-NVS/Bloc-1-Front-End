@@ -139,21 +139,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     margin-top: 20px;
     margin-bottom: 30px;
 
     #pagesNumbers {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 4px;
     }
 
     button {
       font-family: $font1;
-      font-size: 1rem;
+      font-size: 0.85rem;
       font-weight: 300;
-      padding: 7px 10px;
+      padding: 4px 8px;
       border-radius: 6px;
       border: none;
       background: transparent;
@@ -165,7 +165,7 @@
       }
     }
 
-    .page-btn.active {
+    .page.active {
       background: $orange;
       color: white;
     }

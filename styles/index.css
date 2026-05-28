@@ -617,20 +617,20 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 .recettes .pagination #pagesNumbers {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 .recettes .pagination button {
   font-family: "InterLight", serif;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 300;
-  padding: 7px 10px;
+  padding: 4px 8px;
   border-radius: 6px;
   border: none;
   background: transparent;
@@ -640,7 +640,7 @@ footer p {
   background: #da6803;
   color: white;
 }
-.recettes .pagination .page-btn.active {
+.recettes .pagination .page.active {
   background: #da6803;
   color: white;
 }
@@ -1449,20 +1449,20 @@ main form .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 .recherche-recettes .pagination #pagesNumbers {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 .recherche-recettes .pagination button {
   font-family: "InterLight", serif;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 300;
-  padding: 7px 10px;
+  padding: 4px 8px;
   border-radius: 6px;
   border: none;
   background: transparent;
@@ -1472,7 +1472,7 @@ main form .btn {
   background: #da6803;
   color: white;
 }
-.recherche-recettes .pagination .page-btn.active {
+.recherche-recettes .pagination .page.active {
   background: #da6803;
   color: white;
 }
@@ -1937,8 +1937,7 @@ main form .btn {
   margin: 0 auto;
 }
 .section-autres-recettes .titre-autres-recettes {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2rem;
   color: #111;
   margin-bottom: 35px;
 }
@@ -1985,7 +1984,7 @@ main form .btn {
   transform: scale(1.05);
 }
 .section-autres-recettes .carte-recette .nom-recette {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #111;
   line-height: 1.4;
@@ -1993,6 +1992,7 @@ main form .btn {
   min-height: 42px;
 }
 .section-autres-recettes .carte-recette .infos-recette {
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2003,7 +2003,6 @@ main form .btn {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 1.4rem;
   color: #7b7b7b;
 }
 .section-autres-recettes .carte-recette .infos-recette .note-recette i {
@@ -2011,7 +2010,6 @@ main form .btn {
   font-size: 1.3rem;
 }
 .section-autres-recettes .carte-recette .infos-recette .auteur-recette {
-  font-size: 1.4rem;
   color: #8b8b8b;
 }
 
@@ -2103,7 +2101,7 @@ main form .btn {
     padding: 40px 0;
   }
   .section-autres-recettes .titre-autres-recettes {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .section-autres-recettes .grille-recettes {
     grid-template-columns: repeat(2, 1fr);

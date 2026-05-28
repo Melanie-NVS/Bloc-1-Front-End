@@ -4,83 +4,767 @@
     "image": "assets/img/recettes/poulet_teriyaki.png",
     "note": "4.8",
     "votes": "110",
-    "auteur": "Mélanie"
+    "auteur": "Mélanie",
+    "categorie": "plat"
   },
   {
     "titre": "Bruschettas à la tomate",
     "image": "assets/img/recettes/bruschettas_tomate.jpg",
     "note": "4.8",
     "votes": "120",
-    "auteur": "Céline"
+    "auteur": "Céline",
+    "categorie": "entree"
   },
   {
     "titre": "Burger maison",
     "image": "assets/img/recettes/burger_maison.jpg",
     "note": "4.8",
     "votes": "160",
-    "auteur": "Bastien"
+    "auteur": "Bastien",
+    "categorie": "plat"
   },
   {
     "titre": "Chili con carne",
     "image": "assets/img/recettes/chili_con_carne.jpg",
     "note": "4.8",
     "votes": "125",
-    "auteur": "Thomas"
+    "auteur": "Thomas",
+    "categorie": "plat"
   },
   {
     "titre": "Couscous aux légumes",
     "image": "assets/img/recettes/couscous_legumes.jpg",
     "note": "4.8",
     "votes": "114",
-    "auteur": "Fabrice"
+    "auteur": "Fabrice",
+    "categorie": "plat"
   },
   {
     "titre": "Curry aux pois chiche",
     "image": "assets/img/recettes/curry_pois_chiche.jpg",
     "note": "4.8",
     "votes": "102",
-    "auteur": "Léa"
+    "auteur": "Léa",
+    "categorie": "végétarien"
   },
   {
     "titre": "Brioche perdue",
     "image": "assets/img/recettes/brioche_perdue.jpg",
     "note": "4.8",
     "votes": "187",
-    "auteur": "Florence"
+    "auteur": "Florence",
+    "categorie": "petit-déjeuner"
   },
   {
     "titre": "Granola",
     "image": "assets/img/recettes/granola.jpg",
     "note": "4.8",
     "votes": "145",
-    "auteur": "Loane"
+    "auteur": "Loane",
+    "categorie": "petit-déjeuner"
   },
   {
     "titre": "Nouilles aux légumes",
     "image": "assets/img/recettes/nouilles_legumes.png",
     "note": "4.8",
     "votes": "127",
-    "auteur": "Loic"
+    "auteur": "Loic",
+    "categorie": "pâtes"
   },
   {
     "titre": "Poulet rôti",
     "image": "assets/img/recettes/poulet_roti.png",
     "note": "4.8",
     "votes": "124",
-    "auteur": "Manuel"
+    "auteur": "Manuel",
+    "categorie": "plat"
   },
   {
     "titre": "Poelée aux légumes",
     "image": "assets/img/recettes/poelee_legumes_soleil.jpg",
     "note": "4.8",
     "votes": "132",
-    "auteur": "Lydie"
+    "auteur": "Lydie",
+    "categorie": "végétarien"
   },
   {
     "titre": "Poulet au citron",
     "image": "assets/img/recettes/poulet_citron.png",
     "note": "4.8",
     "votes": "141",
-    "auteur": "Liyana"
+    "auteur": "Liyana",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Boulettes à la sauce tomate",
+    "image": "assets/img/recettes/boulettes_sauce_tomate.jpg",
+    "note": "4.7",
+    "votes": "98",
+    "auteur": "Sophie",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Brownie au chocolat",
+    "image": "assets/img/recettes/brownie_chocolat.png",
+    "note": "4.9",
+    "votes": "203",
+    "auteur": "Laura",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Brownie aux noix",
+    "image": "assets/img/recettes/brownie_noix.jpg",
+    "note": "4.7",
+    "votes": "156",
+    "auteur": "Julie",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Cake au citron",
+    "image": "assets/img/recettes/cake_citron.jpg",
+    "note": "4.6",
+    "votes": "89",
+    "auteur": "Camille",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Cake salé jambon fromage",
+    "image": "assets/img/recettes/cake_sale_jambon_fromage.jpg",
+    "note": "4.5",
+    "votes": "74",
+    "auteur": "Nicolas",
+    "categorie": "entree"
+  },
+  {
+    "titre": "Cheesecake sans cuisson",
+    "image": "assets/img/recettes/cheesecake_sans_cuisson.jpg",
+    "note": "4.8",
+    "votes": "178",
+    "auteur": "Emma",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Chili sin carne",
+    "image": "assets/img/recettes/chili_sin_carne.jpg",
+    "note": "4.6",
+    "votes": "91",
+    "auteur": "Hugo",
+    "categorie": "végan"
+  },
+  {
+    "titre": "Chili végétarien express",
+    "image": "assets/img/recettes/chili_vegetarien_express.jpg",
+    "note": "4.5",
+    "votes": "83",
+    "auteur": "Jade",
+    "categorie": "végétarien"
+  },
+  {
+    "titre": "Chou fleur rôti",
+    "image": "assets/img/recettes/chou_fleur_roti.webp",
+    "note": "4.4",
+    "votes": "67",
+    "auteur": "Pierre",
+    "categorie": "végétarien"
+  },
+  {
+    "titre": "Clafoutis cerises",
+    "image": "assets/img/recettes/clafoutis_cerises.jpg",
+    "note": "4.7",
+    "votes": "112",
+    "auteur": "Marie",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Compote pomme poire",
+    "image": "assets/img/recettes/compote_pomme_poire.jpg",
+    "note": "4.5",
+    "votes": "76",
+    "auteur": "Lucie",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Couscous au poulet",
+    "image": "assets/img/recettes/couscous_poulet.webp",
+    "note": "4.8",
+    "votes": "195",
+    "auteur": "Karim",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Crêpe sucrée",
+    "image": "assets/img/recettes/crepe_sucre.png",
+    "note": "4.9",
+    "votes": "231",
+    "auteur": "Anaïs",
+    "categorie": "petit-déjeuner"
+  },
+  {
+    "titre": "Croque monsieur",
+    "image": "assets/img/recettes/croque_monsieur.jpg",
+    "note": "4.6",
+    "votes": "143",
+    "auteur": "Romain",
+    "categorie": "rapide & facile"
+  },
+  {
+    "titre": "Crumble aux pommes",
+    "image": "assets/img/recettes/crumble_pommes.jpg",
+    "note": "4.8",
+    "votes": "167",
+    "auteur": "Nathalie",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Dahl de lentilles",
+    "image": "assets/img/recettes/dahl_lentilles.jpg",
+    "note": "4.7",
+    "votes": "108",
+    "auteur": "Sarah",
+    "categorie": "végan"
+  },
+  {
+    "titre": "Flan pâtissier",
+    "image": "assets/img/recettes/flan_patissier.jpg",
+    "note": "4.8",
+    "votes": "189",
+    "auteur": "Antoine",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Galettes de pommes de terre",
+    "image": "assets/img/recettes/galettes_pommes_terre.jpg",
+    "note": "4.5",
+    "votes": "94",
+    "auteur": "Claire",
+    "categorie": "végétarien"
+  },
+  {
+    "titre": "Gâteau au yaourt",
+    "image": "assets/img/recettes/gateau_yaourt.jpeg",
+    "note": "4.7",
+    "votes": "213",
+    "auteur": "Pauline",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Gnocchis poêlés",
+    "image": "assets/img/recettes/gnocchis_poeles.jpg",
+    "note": "4.6",
+    "votes": "87",
+    "auteur": "Marco",
+    "categorie": "pâtes"
+  },
+  {
+    "titre": "Gratin de courgettes",
+    "image": "assets/img/recettes/gratin_courgettes.jpg",
+    "note": "4.6",
+    "votes": "119",
+    "auteur": "Isabelle",
+    "categorie": "végétarien"
+  },
+  {
+    "titre": "Gratin dauphinois",
+    "image": "assets/img/recettes/gratin_dauphinois.jpg",
+    "note": "4.9",
+    "votes": "247",
+    "auteur": "Bernard",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Guacamole express",
+    "image": "assets/img/recettes/guacamole_express.png",
+    "note": "4.7",
+    "votes": "134",
+    "auteur": "Elena",
+    "categorie": "apéritifs"
+  },
+  {
+    "titre": "Lasagnes bolognaise",
+    "image": "assets/img/recettes/lasagnes_bolognaise.jpg",
+    "note": "4.9",
+    "votes": "278",
+    "auteur": "Rosa",
+    "categorie": "pâtes"
+  },
+  {
+    "titre": "Lasagnes végétariennes",
+    "image": "assets/img/recettes/lasagnes_vegetariennes.jpg",
+    "note": "4.7",
+    "votes": "142",
+    "auteur": "Zoé",
+    "categorie": "végétarien"
+  },
+  {
+    "titre": "Macaronis au fromage",
+    "image": "assets/img/recettes/macaronis_fromage.jpg",
+    "note": "4.8",
+    "votes": "198",
+    "auteur": "Dylan",
+    "categorie": "pâtes"
+  },
+  {
+    "titre": "Mini feuilleté fromage",
+    "image": "assets/img/recettes/mini_feuillete_fromage.jpg",
+    "note": "4.6",
+    "votes": "103",
+    "auteur": "Sandrine",
+    "categorie": "apéritifs"
+  },
+  {
+    "titre": "Mini pizzas maison",
+    "image": "assets/img/recettes/mini_pizzas_maison.jpg",
+    "note": "4.7",
+    "votes": "156",
+    "auteur": "Tony",
+    "categorie": "apéritifs"
+  },
+  {
+    "titre": "Mousse au chocolat",
+    "image": "assets/img/recettes/mousse_chocolat.jpg",
+    "note": "4.9",
+    "votes": "224",
+    "auteur": "Christine",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Omelette fines herbes",
+    "image": "assets/img/recettes/omelette_fines_herbes.jpg",
+    "note": "4.5",
+    "votes": "88",
+    "auteur": "Patricia",
+    "categorie": "petit-déjeuner"
+  },
+  {
+    "titre": "Omelette fromage",
+    "image": "assets/img/recettes/omelette_fromage.jpg",
+    "note": "4.4",
+    "votes": "76",
+    "auteur": "Franck",
+    "categorie": "rapide & facile"
+  },
+  {
+    "titre": "Pancakes",
+    "image": "assets/img/recettes/pancakes.jpg",
+    "note": "4.9",
+    "votes": "267",
+    "auteur": "Amélie",
+    "categorie": "petit-déjeuner"
+  },
+  {
+    "titre": "Pâte arrabiata",
+    "image": "assets/img/recettes/pate_arrabiata.jpg",
+    "note": "4.6",
+    "votes": "112",
+    "auteur": "Luca",
+    "categorie": "pâtes"
+  },
+  {
+    "titre": "Pâte carbonara",
+    "image": "assets/img/recettes/pate_carbonara.jpg",
+    "note": "4.8",
+    "votes": "243",
+    "auteur": "Giulia",
+    "categorie": "pâtes"
+  },
+  {
+    "titre": "Pâtes au pesto",
+    "image": "assets/img/recettes/pate_pesto.jpg",
+    "note": "4.7",
+    "votes": "167",
+    "auteur": "Marco",
+    "categorie": "pâtes"
+  },
+  {
+    "titre": "Pâtes citron parmesan",
+    "image": "assets/img/recettes/pates_citron_parmesan.jpg",
+    "note": "4.7",
+    "votes": "134",
+    "auteur": "Alice",
+    "categorie": "pâtes"
+  },
+  {
+    "titre": "Pâtes quatre fromages",
+    "image": "assets/img/recettes/pates_quatre_fromages.jpg",
+    "note": "4.8",
+    "votes": "189",
+    "auteur": "Maxime",
+    "categorie": "pâtes"
+  },
+  {
+    "titre": "Pâtes au saumon",
+    "image": "assets/img/recettes/pates_saumon.jpg",
+    "note": "4.7",
+    "votes": "145",
+    "auteur": "Hélène",
+    "categorie": "pâtes"
+  },
+  {
+    "titre": "Pâtes au thon",
+    "image": "assets/img/recettes/pates_thon.jpg",
+    "note": "4.5",
+    "votes": "98",
+    "auteur": "Stéphane",
+    "categorie": "pâtes"
+  },
+  {
+    "titre": "Poisson citron",
+    "image": "assets/img/recettes/poisson_citron.jpg",
+    "note": "4.6",
+    "votes": "87",
+    "auteur": "Marine",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Poisson pané maison",
+    "image": "assets/img/recettes/poisson_pane_maison.jpg",
+    "note": "4.5",
+    "votes": "76",
+    "auteur": "Bertrand",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Poulet crème",
+    "image": "assets/img/recettes/poulet_creme.jpg",
+    "note": "4.7",
+    "votes": "132",
+    "auteur": "Virginie",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Poulet curry coco",
+    "image": "assets/img/recettes/poulet_curry_coco.jpg",
+    "note": "4.8",
+    "votes": "156",
+    "auteur": "Sonia",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Purée maison",
+    "image": "assets/img/recettes/puree_maison.jpg",
+    "note": "4.7",
+    "votes": "143",
+    "auteur": "Gérard",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Quiche lorraine",
+    "image": "assets/img/recettes/quiche_lorraine.jpg",
+    "note": "4.8",
+    "votes": "198",
+    "auteur": "Martine",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Quinoa légumes rôtis",
+    "image": "assets/img/recettes/quinoa_legumes_rotis.jpg",
+    "note": "4.6",
+    "votes": "112",
+    "auteur": "Cécile",
+    "categorie": "healthy"
+  },
+  {
+    "titre": "Ratatouille au four",
+    "image": "assets/img/recettes/ratatouille_four.jpg",
+    "note": "4.7",
+    "votes": "134",
+    "auteur": "René",
+    "categorie": "végétarien"
+  },
+  {
+    "titre": "Ratatouille",
+    "image": "assets/img/recettes/ratatouille.webp",
+    "note": "4.8",
+    "votes": "167",
+    "auteur": "Claudette",
+    "categorie": "végétarien"
+  },
+  {
+    "titre": "Risotto champignons",
+    "image": "assets/img/recettes/risotto_champignons.jpg",
+    "note": "4.8",
+    "votes": "178",
+    "auteur": "Giorgio",
+    "categorie": "végétarien"
+  },
+  {
+    "titre": "Riz cantonnais",
+    "image": "assets/img/recettes/riz_cantonais.jpg",
+    "note": "4.7",
+    "votes": "156",
+    "auteur": "Lin",
+    "categorie": "plat"
+  },
+  {
+    "titre": "Riz aux légumes",
+    "image": "assets/img/recettes/riz_legumes.webp",
+    "note": "4.5",
+    "votes": "98",
+    "auteur": "Aminata",
+    "categorie": "healthy"
+  },
+  {
+    "titre": "Salade avocat tomate",
+    "image": "assets/img/recettes/salade_avocat_tomate.jpg",
+    "note": "4.6",
+    "votes": "112",
+    "auteur": "Océane",
+    "categorie": "salades"
+  },
+  {
+    "titre": "Salade César",
+    "image": "assets/img/recettes/salade_cesar.jpg",
+    "note": "4.7",
+    "votes": "145",
+    "auteur": "Julien",
+    "categorie": "salades"
+  },
+  {
+    "titre": "Salade chèvre chaud",
+    "image": "assets/img/recettes/salade_chevre_chaud.webp",
+    "note": "4.6",
+    "votes": "98",
+    "auteur": "Valérie",
+    "categorie": "salades"
+  },
+  {
+    "titre": "Salade composée chèvre",
+    "image": "assets/img/recettes/salade_composee_chevre.jpg",
+    "note": "4.5",
+    "votes": "87",
+    "auteur": "Brigitte",
+    "categorie": "salades"
+  },
+  {
+    "titre": "Salade grecque",
+    "image": "assets/img/recettes/salade_grecque.jpg",
+    "note": "4.7",
+    "votes": "134",
+    "auteur": "Nikos",
+    "categorie": "salades"
+  },
+  {
+    "titre": "Salade de lentilles",
+    "image": "assets/img/recettes/salade_lentilles.jpg",
+    "note": "4.5",
+    "votes": "89",
+    "auteur": "Awa",
+    "categorie": "salades"
+  },
+  {
+    "titre": "Salade melon feta",
+    "image": "assets/img/recettes/salade_melon_feta.jpg",
+    "note": "4.6",
+    "votes": "76",
+    "auteur": "Chloé",
+    "categorie": "salades"
+  },
+  {
+    "titre": "Salade de pâtes",
+    "image": "assets/img/recettes/salade_pates.jpg",
+    "note": "4.5",
+    "votes": "94",
+    "auteur": "Théo",
+    "categorie": "salades"
+  },
+  {
+    "titre": "Salade pois chiches",
+    "image": "assets/img/recettes/salade_pois_chiches.jpg",
+    "note": "4.6",
+    "votes": "103",
+    "auteur": "Fatima",
+    "categorie": "healthy"
+  },
+  {
+    "titre": "Salade pommes de terre",
+    "image": "assets/img/recettes/salade_pommes_terre.jpg",
+    "note": "4.5",
+    "votes": "87",
+    "auteur": "Denise",
+    "categorie": "salades"
+  },
+  {
+    "titre": "Salade de quinoa",
+    "image": "assets/img/recettes/salade_quinoa.jpg",
+    "note": "4.6",
+    "votes": "103",
+    "auteur": "Inès",
+    "categorie": "healthy"
+  },
+  {
+    "titre": "Salade de riz",
+    "image": "assets/img/recettes/salade_riz.jpg",
+    "note": "4.5",
+    "votes": "91",
+    "auteur": "Mathieu",
+    "categorie": "salades"
+  },
+  {
+    "titre": "Sandwich club",
+    "image": "assets/img/recettes/sandwich_club.jpg",
+    "note": "4.6",
+    "votes": "118",
+    "auteur": "Kevin",
+    "categorie": "rapide & facile"
+  },
+  {
+    "titre": "Smoothie fruit rouge",
+    "image": "assets/img/recettes/smoothie_fruit_rouge.jpg",
+    "note": "4.7",
+    "votes": "134",
+    "auteur": "Léonie",
+    "categorie": "healthy"
+  },
+  {
+    "titre": "Soufflé fromage",
+    "image": "assets/img/recettes/souffle_fromage.jpg",
+    "note": "4.7",
+    "votes": "98",
+    "auteur": "Geneviève",
+    "categorie": "entree"
+  },
+  {
+    "titre": "Soupe de courgettes",
+    "image": "assets/img/recettes/soupe_courgettes.jpg",
+    "note": "4.6",
+    "votes": "112",
+    "auteur": "Véronique",
+    "categorie": "soupe"
+  },
+  {
+    "titre": "Soupe de légumes",
+    "image": "assets/img/recettes/soupe_legumes.jpg",
+    "note": "4.7",
+    "votes": "143",
+    "auteur": "Colette",
+    "categorie": "soupe"
+  },
+  {
+    "titre": "Soupe miso",
+    "image": "assets/img/recettes/soupe_miso.jpg",
+    "note": "4.6",
+    "votes": "89",
+    "auteur": "Yuki",
+    "categorie": "soupe"
+  },
+  {
+    "titre": "Soupe patate douce",
+    "image": "assets/img/recettes/soupe_patate_douce.jpg",
+    "note": "4.8",
+    "votes": "167",
+    "auteur": "Aurore",
+    "categorie": "soupe"
+  },
+  {
+    "titre": "Soupe potiron",
+    "image": "assets/img/recettes/soupe_potiron.jpg",
+    "note": "4.8",
+    "votes": "189",
+    "auteur": "Suzanne",
+    "categorie": "soupe"
+  },
+  {
+    "titre": "Soupe tomate",
+    "image": "assets/img/recettes/soupe_tomate.jpg",
+    "note": "4.6",
+    "votes": "112",
+    "auteur": "Margot",
+    "categorie": "soupe"
+  },
+  {
+    "titre": "Tacos poulet",
+    "image": "assets/img/recettes/tacos_poulet.jpg",
+    "note": "4.7",
+    "votes": "156",
+    "auteur": "Nassim",
+    "categorie": "rapide & facile"
+  },
+  {
+    "titre": "Tacos végétariens",
+    "image": "assets/img/recettes/tacos_vegetariens.jpg",
+    "note": "4.6",
+    "votes": "98",
+    "auteur": "Inaya",
+    "categorie": "végétarien"
+  },
+  {
+    "titre": "Tapenade noire",
+    "image": "assets/img/recettes/tapenade_noire.jpg",
+    "note": "4.5",
+    "votes": "76",
+    "auteur": "Marcel",
+    "categorie": "apéritifs"
+  },
+  {
+    "titre": "Tarte aux pommes",
+    "image": "assets/img/recettes/tarte_pommes.jpg",
+    "note": "4.9",
+    "votes": "234",
+    "auteur": "Jacqueline",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Tarte tomate moutarde",
+    "image": "assets/img/recettes/tarte_tomate_moutarde.jpg",
+    "note": "4.7",
+    "votes": "123",
+    "auteur": "Sylvie",
+    "categorie": "entree"
+  },
+  {
+    "titre": "Tian de légumes",
+    "image": "assets/img/recettes/tian_legumes.jpg",
+    "note": "4.6",
+    "votes": "98",
+    "auteur": "Fernand",
+    "categorie": "végétarien"
+  },
+  {
+    "titre": "Tiramisu",
+    "image": "assets/img/recettes/tiramisu.jpg",
+    "note": "4.9",
+    "votes": "312",
+    "auteur": "Alex Williams",
+    "categorie": "dessert"
+  },
+  {
+    "titre": "Velouté carotte",
+    "image": "assets/img/recettes/veloute_carotte.jpg",
+    "note": "4.7",
+    "votes": "145",
+    "auteur": "Bernadette",
+    "categorie": "soupe"
+  },
+  {
+    "titre": "Velouté poireaux",
+    "image": "assets/img/recettes/veloute_poireaux.jpg",
+    "note": "4.6",
+    "votes": "112",
+    "auteur": "Édith",
+    "categorie": "soupe"
+  },
+  {
+    "titre": "Wok légumes",
+    "image": "assets/img/recettes/wok_legume.jpg",
+    "note": "4.7",
+    "votes": "134",
+    "auteur": "Chen",
+    "categorie": "healthy"
+  },
+  {
+    "titre": "Wrap poulet croustillant",
+    "image": "assets/img/recettes/wrap_poulet_croustillant.jpg",
+    "note": "4.7",
+    "votes": "145",
+    "auteur": "Jordan",
+    "categorie": "rapide & facile"
+  },
+  {
+    "titre": "Wrap végétarien",
+    "image": "assets/img/recettes/wrap_vegetarien.png",
+    "note": "4.6",
+    "votes": "112",
+    "auteur": "Yasmine",
+    "categorie": "végétarien"
   }
 ]
