@@ -5,11 +5,11 @@
 Cuisine Collab est un site web statique de partage de recettes de cuisine réalisé dans le cadre du **Bloc 1 – Développement Front-End de sites et applications web**.
 
 Le projet a été développé uniquement avec :
-- HTML5,
-- SCSS/CSS,
-- JavaScript.
+- HTML5
+- SCSS/CSS3
+- JavaScript (ES6+)
 
-L’objectif du projet est de créer une interface moderne, responsive et interactive permettant aux utilisateurs de naviguer parmi différentes recettes de cuisine.
+L'objectif est de créer une interface moderne, responsive et accessible permettant aux utilisateurs de naviguer parmi différentes recettes de cuisine.
 
 Le site ne possède pas de base de données ni de back-end : toutes les fonctionnalités sont développées côté front-end.
 
@@ -18,37 +18,40 @@ Le site ne possède pas de base de données ni de back-end : toutes les fonction
 # Fonctionnalités du site
 
 ## Accueil
-- présentation du site,
-- affichage des recettes,
-- navigation principale.
+- Présentation du site
+- Affichage dynamique des recettes chargées via `fetch()` depuis un fichier JSON
+- Navigation principale responsive
 
 ## Recherche
-- barre de recherche de recettes.
+- Barre de recherche de recettes
+- Filtrage par type de plat (accordéon interactif)
+- Système de tri dynamique (Récent, Entrée, Plat, Dessert)
+- Pagination dynamique
 
-## Tri des recettes
-- filtrage des recettes :
-  - récent,
-  - entrée,
-  - plat,
-  - dessert.
+## Recette
+- Affichage détaillé d'une recette (ingrédients, étapes, commentaires)
+- Navigation rapide par ancres (`#etapes`, `#ingredients`, `#commentaires`)
+- Données structurées Schema.org pour le référencement
 
 ## Favoris
-- ajout visuel de recettes en favoris avec une icône cœur.
+- Ajout visuel de recettes en favoris avec une icône cœur (toggle)
 
 ## Connexion
-- formulaire de connexion statique.
+- Formulaire de connexion avec validation HTML5
 
 ## Inscription
-- formulaire d’inscription statique.
+- Formulaire d'inscription avec validation HTML5
 
 ## Contact
-- formulaire de contact.
+- Formulaire de contact avec validation en temps réel (HTML5)
+- Message de confirmation à l'envoi
 
-## Interactions JavaScript
-- menus interactifs,
-- filtres dynamiques,
-- animations,
-- manipulation du DOM.
+## Accessibilité
+- Police OpenDyslexic activable via un bouton "Aa" dans la navigation
+- Navigation complète au clavier avec style `:focus-visible`
+- `aria-label` sur tous les éléments interactifs (boutons icônes, liens, notes)
+- `aria-hidden="true"` sur les icônes décoratives
+- Balises sémantiques HTML5 (`header`, `nav`, `main`, `section`, `article`, `aside`, `footer`)
 
 ---
 
@@ -56,9 +59,9 @@ Le site ne possède pas de base de données ni de back-end : toutes les fonction
 
 | Page | Description |
 |---|---|
-| `index.html` | Page d’accueil |
-| `search.html` | Recherche de recettes |
-| `recipe.html` | Détail d’une recette |
+| `index.html` | Page d'accueil avec recettes et vidéos |
+| `search.html` | Recherche et filtrage de recettes |
+| `recipe.html` | Détail complet d'une recette |
 | `signIn.html` | Connexion utilisateur |
 | `signUp.html` | Inscription utilisateur |
 | `contact.html` | Formulaire de contact |
@@ -70,49 +73,164 @@ Le site ne possède pas de base de données ni de back-end : toutes les fonction
 ## Front-End
 - HTML5
 - CSS3
-- SCSS
-- JavaScript
+- SCSS (préprocesseur CSS)
+- JavaScript ES6+
 
 ## Librairies
-- Font Awesome
-- Google Fonts
+- Font Awesome 7 (icônes)
+- Google Fonts (Inter, Poppins, Allura)
+- OpenDyslexic (accessibilité)
 
 ## Outils
 - Visual Studio Code
-- Git
-- GitHub
+- Git & GitHub
+- Live Server (extension VSCode)
+- Node.js + npm (pour compiler le SCSS)
+
+---
+
+# SCSS – Installation et utilisation
+
+## Qu'est-ce que SCSS ?
+
+SCSS (Sassy CSS) est un **préprocesseur CSS** qui étend les possibilités du CSS classique en ajoutant :
+- des **variables** (`$orange`, `$font1`…)
+- des **règles imbriquées** (nesting)
+- des **fichiers partiels** (découpage du code en plusieurs fichiers `_nomFichier.scss`)
+- des **mixins** et fonctions réutilisables
+
+Le navigateur ne comprend pas le SCSS directement — il faut le **compiler en CSS**.
+
+## Prérequis
+
+Avoir **Node.js** installé sur votre machine.
+Vérifier avec :
+
+```bash
+node -v
+npm -v
+```
+
+Si ce n'est pas installé, téléchargez Node.js sur [https://nodejs.org](https://nodejs.org)
+
+## Installation de Sass
+
+Dans le terminal, à la racine du projet :
+
+```bash
+npm install -g sass
+```
+
+Vérifier l'installation :
+
+```bash
+sass --version
+```
+
+## Compiler le SCSS manuellement
+
+```bash
+sass styles/index.scss styles/index.css
+```
+
+## Compiler automatiquement (mode watch)
+
+Ce mode surveille les fichiers SCSS et recompile automatiquement à chaque modification :
+
+```bash
+sass --watch styles/index.scss styles/index.css
+```
+
+Laisser ce terminal ouvert pendant le développement.
+
+## Structure SCSS du projet
+
+```txt
+styles/
+│
+├── _settings.scss          → Variables globales (couleurs, polices, accessibilité)
+│
+├── components/
+│   ├── _button.scss        → Styles des boutons
+│   └── _socials.scss       → Styles des réseaux sociaux
+│
+├── layout/
+│   ├── _navBar.scss        → Styles de la navigation
+│   └── _footer.scss        → Styles du footer
+│
+├── pages_scss/
+│   ├── _home.scss          → Styles de la page d'accueil
+│   ├── _recipe.scss        → Styles de la page recette
+│   ├── _search.scss        → Styles de la page recherche
+│   ├── _contact.scss       → Styles de la page contact
+│   ├── _signIn.scss        → Styles de la page connexion
+│   └── _signUp.scss        → Styles de la page inscription
+│
+├── index.scss              → Fichier principal qui importe tous les partiels
+└── index.css               → Fichier compilé (ne pas modifier directement)
+```
+
+> ⚠️ Ne jamais modifier `index.css` directement — ce fichier est généré automatiquement par la compilation SCSS.
 
 ---
 
 # Responsive Design
 
-Le site a été développé pour s’adapter à différents écrans :
-- mobile,
-- tablette,
-- desktop.
+Le site s'adapte à tous les écrans grâce aux media queries :
 
-Des media queries ont été utilisées afin d’assurer une expérience utilisateur optimale sur tous les appareils.
+| Breakpoint | Appareils ciblés |
+|---|---|
+| ≤ 480px | Mobile |
+| ≤ 768px | Petite tablette |
+| ≤ 1024px | Tablette |
+| > 1024px | Desktop |
+
+Un menu hamburger est intégré pour les écrans mobiles (≤ 744px).
 
 ---
 
-# Accessibilité
+# Accessibilité (RGAA / WCAG)
 
-Le projet applique plusieurs bonnes pratiques d’accessibilité :
-- utilisation des balises sémantiques HTML,
-- textes alternatifs sur les images,
-- structure claire des contenus,
-- navigation simplifiée.
+| Critère | Implémentation |
+|---|---|
+| Balises sémantiques | `header`, `nav`, `main`, `section`, `article`, `aside`, `footer` |
+| Textes alternatifs | Attributs `alt` sur toutes les images |
+| Police dyslexiques | OpenDyslexic activable via bouton "Aa" |
+| Navigation clavier | Style `:focus-visible` sur tous les éléments interactifs |
+| Lecteurs d'écran | `aria-label` sur boutons icônes, `aria-hidden` sur icônes décoratives |
+| Contraste des couleurs | Textes lisibles sur tous les fonds |
+| Infos non transmises uniquement par couleur | Messages textuels accompagnent les indicateurs visuels |
 
 ---
 
 # SEO – Référencement naturel
 
-Le site respecte plusieurs règles de référencement naturel :
-- balises `title`,
-- balises `meta description`,
-- structure sémantique HTML,
-- hiérarchie des titres,
-- optimisation des images.
+| Critère | Implémentation |
+|---|---|
+| Balises `<title>` | Uniques et descriptives sur chaque page |
+| Balises `<meta description>` | Présentes sur chaque page |
+| Balises canoniques | `<link rel="canonical">` sur chaque page |
+| Hiérarchie des titres | `h1` → `h2` → `h3` respectée |
+| Attributs `alt` | Présents sur toutes les images |
+| Schema.org | Données structurées `Recipe` sur `recipe.html` |
+| Favicon | Intégré sur toutes les pages |
+| Ancres intra-page | `#etapes`, `#ingredients`, `#commentaires` sur `recipe.html` |
+| Balises sémantiques | `article`, `aside`, `nav`, `section` |
+| Navigation entre pages | Liens fonctionnels sur toutes les pages |
+
+---
+
+# Tests effectués
+
+| Test | Outil |
+|---|---|
+| Validation HTML | Validateur W3C |
+| Validation CSS | Validateur W3C CSS |
+| Performance & accessibilité | Google Lighthouse |
+| Responsive design | Chrome DevTools |
+| Navigation clavier | Test manuel (Tab, Entrée, Espace) |
+| Compatibilité navigateurs | Chrome, Firefox, Edge |
+| Police OpenDyslexic | Test manuel bouton "Aa" |
 
 ---
 
@@ -122,11 +240,13 @@ Le site respecte plusieurs règles de référencement naturel :
 Bloc-1-Front-End/
 │
 ├── assets/
-│   ├── images/
-│   └── icons/
+│   ├── fonts/
+│   │   └── OpenDyslexic-Regular.otf
+│   └── img/
+│       └── recettes/
 │
-├── javascript/
-│   └── scripts.js
+├── Javascript/
+│   └── index.js
 │
 ├── pages_html/
 │   ├── contact.html
@@ -136,45 +256,64 @@ Bloc-1-Front-End/
 │   └── signUp.html
 │
 ├── styles/
-│   ├── css/
-│   ├── scss/
-│   └── components/
+│   ├── components/
+│   │   ├── _button.scss
+│   │   ├── _carousel.scss
+│   │   └── _socials.scss
+│   ├── layout/
+│   │   ├── _navBar.scss
+│   │   └── _footer.scss
+│   ├── pages_scss/
+│   │   ├── _home.scss
+│   │   ├── _recipe.scss
+│   │   ├── _search.scss
+│   │   ├── _contact.scss
+│   │   ├── _signIn.scss
+│   │   └── _signUp.scss
+│   ├── _settings.scss
+│   ├── index.scss
+│   └── index.css
 │
+├── recettes.json
+├── favicon.ico
 ├── index.html
 └── README.md
 ```
 
-# Installation du projet
+---
 
-## Cloner le dépôt GitHub
+# Installation et lancement du projet
+
+## 1. Cloner le dépôt
 
 ```bash
 git clone https://github.com/Melanie-NVS/Bloc-1-Front-End.git
+cd Bloc-1-Front-End
 ```
 
-## Ouvrir le projet
+## 2. Installer Sass (si pas déjà installé)
 
-Ouvrir le dossier dans Visual Studio Code.
+```bash
+npm install -g sass
+```
 
----
+## 3. Compiler le SCSS en mode watch
 
-# Lancer le projet
+```bash
+sass --watch styles/index.scss styles/index.css
+```
 
-Le projet étant entièrement statique, aucune installation particulière n’est nécessaire.
+## 4. Lancer le projet
 
-Pour lancer le site :
+Utiliser l'extension **Live Server** sur Visual Studio Code :
+- Clic droit sur `index.html`
+- Sélectionner **Open with Live Server**
 
-1. ouvrir `index.html` dans le navigateur,
-
-ou
-
-2. utiliser l’extension **Live Server** sur Visual Studio Code :
-   - clic droit sur `index.html`
-   - sélectionner **Open with Live Server**
+> ⚠️ Ne pas ouvrir `index.html` directement dans le navigateur (double-clic) — le `fetch()` ne fonctionnera pas sans serveur local.
 
 ---
 
 # Auteur
 
-Projet réalisé par **Mélanie NVS**  
+Projet réalisé par **Mélanie NVS**
 Formation Développeur Web & Web Mobile – Bloc 1 Front-End.
