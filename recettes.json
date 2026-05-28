@@ -1,7 +1,7 @@
 [
   {
     "titre": "Poulet teriyaki",
-    "image": "assets/img/recettes/poulet_teriyaki.png",
+    "image": "assets/img/recettes/poulet_teriyaki.webp",
     "note": "4.8",
     "votes": "110",
     "auteur": "Mélanie",
@@ -9,7 +9,7 @@
   },
   {
     "titre": "Bruschettas à la tomate",
-    "image": "assets/img/recettes/bruschettas_tomate.jpg",
+    "image": "assets/img/recettes/bruschettas_tomate.webp",
     "note": "4.8",
     "votes": "120",
     "auteur": "Céline",
@@ -17,7 +17,7 @@
   },
   {
     "titre": "Burger maison",
-    "image": "assets/img/recettes/burger_maison.jpg",
+    "image": "assets/img/recettes/burger_maison.webp",
     "note": "4.8",
     "votes": "160",
     "auteur": "Bastien",
@@ -25,7 +25,7 @@
   },
   {
     "titre": "Chili con carne",
-    "image": "assets/img/recettes/chili_con_carne.jpg",
+    "image": "assets/img/recettes/chili_con_carne.webp",
     "note": "4.8",
     "votes": "125",
     "auteur": "Thomas",
@@ -33,7 +33,7 @@
   },
   {
     "titre": "Couscous aux légumes",
-    "image": "assets/img/recettes/couscous_legumes.jpg",
+    "image": "assets/img/recettes/couscous_legumes.webp",
     "note": "4.8",
     "votes": "114",
     "auteur": "Fabrice",
@@ -41,7 +41,7 @@
   },
   {
     "titre": "Curry aux pois chiche",
-    "image": "assets/img/recettes/curry_pois_chiche.jpg",
+    "image": "assets/img/recettes/curry_pois_chiche.webp",
     "note": "4.8",
     "votes": "102",
     "auteur": "Léa",
@@ -49,7 +49,7 @@
   },
   {
     "titre": "Brioche perdue",
-    "image": "assets/img/recettes/brioche_perdue.jpg",
+    "image": "assets/img/recettes/brioche_perdue.webp",
     "note": "4.8",
     "votes": "187",
     "auteur": "Florence",
@@ -57,7 +57,7 @@
   },
   {
     "titre": "Granola",
-    "image": "assets/img/recettes/granola.jpg",
+    "image": "assets/img/recettes/granola.webp",
     "note": "4.8",
     "votes": "145",
     "auteur": "Loane",
@@ -65,7 +65,7 @@
   },
   {
     "titre": "Nouilles aux légumes",
-    "image": "assets/img/recettes/nouilles_legumes.png",
+    "image": "assets/img/recettes/nouilles_legumes.webp",
     "note": "4.8",
     "votes": "127",
     "auteur": "Loic",
@@ -73,7 +73,7 @@
   },
   {
     "titre": "Poulet rôti",
-    "image": "assets/img/recettes/poulet_roti.png",
+    "image": "assets/img/recettes/poulet_roti.webp",
     "note": "4.8",
     "votes": "124",
     "auteur": "Manuel",
@@ -81,7 +81,7 @@
   },
   {
     "titre": "Poelée aux légumes",
-    "image": "assets/img/recettes/poelee_legumes_soleil.jpg",
+    "image": "assets/img/recettes/poelee_legumes_soleil.webp",
     "note": "4.8",
     "votes": "132",
     "auteur": "Lydie",
@@ -89,7 +89,7 @@
   },
   {
     "titre": "Poulet au citron",
-    "image": "assets/img/recettes/poulet_citron.png",
+    "image": "assets/img/recettes/poulet_citron.webp",
     "note": "4.8",
     "votes": "141",
     "auteur": "Liyana",
@@ -97,7 +97,7 @@
   },
   {
     "titre": "Boulettes à la sauce tomate",
-    "image": "assets/img/recettes/boulettes_sauce_tomate.jpg",
+    "image": "assets/img/recettes/boulettes_sauce_tomate.webp",
     "note": "4.7",
     "votes": "98",
     "auteur": "Sophie",
@@ -105,7 +105,7 @@
   },
   {
     "titre": "Brownie au chocolat",
-    "image": "assets/img/recettes/brownie_chocolat.png",
+    "image": "assets/img/recettes/brownie_chocolat.webp",
     "note": "4.9",
     "votes": "203",
     "auteur": "Laura",
@@ -113,7 +113,7 @@
   },
   {
     "titre": "Brownie aux noix",
-    "image": "assets/img/recettes/brownie_noix.jpg",
+    "image": "assets/img/recettes/brownie_noix.webp",
     "note": "4.7",
     "votes": "156",
     "auteur": "Julie",
@@ -121,7 +121,7 @@
   },
   {
     "titre": "Cake au citron",
-    "image": "assets/img/recettes/cake_citron.jpg",
+    "image": "assets/img/recettes/cake_citron.webp",
     "note": "4.6",
     "votes": "89",
     "auteur": "Camille",
@@ -129,7 +129,7 @@
   },
   {
     "titre": "Cake salé jambon fromage",
-    "image": "assets/img/recettes/cake_sale_jambon_fromage.jpg",
+    "image": "assets/img/recettes/cake_sale_jambon_fromage.webp",
     "note": "4.5",
     "votes": "74",
     "auteur": "Nicolas",
@@ -137,7 +137,7 @@
   },
   {
     "titre": "Cheesecake sans cuisson",
-    "image": "assets/img/recettes/cheesecake_sans_cuisson.jpg",
+    "image": "assets/img/recettes/cheesecake_sans_cuisson.webp",
     "note": "4.8",
     "votes": "178",
     "auteur": "Emma",
@@ -145,7 +145,7 @@
   },
   {
     "titre": "Chili sin carne",
-    "image": "assets/img/recettes/chili_sin_carne.jpg",
+    "image": "assets/img/recettes/chili_sin_carne.webp",
     "note": "4.6",
     "votes": "91",
     "auteur": "Hugo",
@@ -153,7 +153,7 @@
   },
   {
     "titre": "Chili végétarien express",
-    "image": "assets/img/recettes/chili_vegetarien_express.jpg",
+    "image": "assets/img/recettes/chili_vegetarien_express.webp",
     "note": "4.5",
     "votes": "83",
     "auteur": "Jade",
@@ -169,7 +169,7 @@
   },
   {
     "titre": "Clafoutis cerises",
-    "image": "assets/img/recettes/clafoutis_cerises.jpg",
+    "image": "assets/img/recettes/clafoutis_cerises.webp",
     "note": "4.7",
     "votes": "112",
     "auteur": "Marie",
@@ -177,7 +177,7 @@
   },
   {
     "titre": "Compote pomme poire",
-    "image": "assets/img/recettes/compote_pomme_poire.jpg",
+    "image": "assets/img/recettes/compote_pomme_poire.webp",
     "note": "4.5",
     "votes": "76",
     "auteur": "Lucie",
@@ -193,7 +193,7 @@
   },
   {
     "titre": "Crêpe sucrée",
-    "image": "assets/img/recettes/crepe_sucre.png",
+    "image": "assets/img/recettes/crepe_sucre.webp",
     "note": "4.9",
     "votes": "231",
     "auteur": "Anaïs",
@@ -201,7 +201,7 @@
   },
   {
     "titre": "Croque monsieur",
-    "image": "assets/img/recettes/croque_monsieur.jpg",
+    "image": "assets/img/recettes/croque_monsieur.webp",
     "note": "4.6",
     "votes": "143",
     "auteur": "Romain",
@@ -209,7 +209,7 @@
   },
   {
     "titre": "Crumble aux pommes",
-    "image": "assets/img/recettes/crumble_pommes.jpg",
+    "image": "assets/img/recettes/crumble_pommes.webp",
     "note": "4.8",
     "votes": "167",
     "auteur": "Nathalie",
@@ -217,7 +217,7 @@
   },
   {
     "titre": "Dahl de lentilles",
-    "image": "assets/img/recettes/dahl_lentilles.jpg",
+    "image": "assets/img/recettes/dahl_lentilles.webp",
     "note": "4.7",
     "votes": "108",
     "auteur": "Sarah",
@@ -225,7 +225,7 @@
   },
   {
     "titre": "Flan pâtissier",
-    "image": "assets/img/recettes/flan_patissier.jpg",
+    "image": "assets/img/recettes/flan_patissier.webp",
     "note": "4.8",
     "votes": "189",
     "auteur": "Antoine",
@@ -233,7 +233,7 @@
   },
   {
     "titre": "Galettes de pommes de terre",
-    "image": "assets/img/recettes/galettes_pommes_terre.jpg",
+    "image": "assets/img/recettes/galettes_pommes_terre.webp",
     "note": "4.5",
     "votes": "94",
     "auteur": "Claire",
@@ -249,7 +249,7 @@
   },
   {
     "titre": "Gnocchis poêlés",
-    "image": "assets/img/recettes/gnocchis_poeles.jpg",
+    "image": "assets/img/recettes/gnocchis_poeles.webp",
     "note": "4.6",
     "votes": "87",
     "auteur": "Marco",
@@ -257,7 +257,7 @@
   },
   {
     "titre": "Gratin de courgettes",
-    "image": "assets/img/recettes/gratin_courgettes.jpg",
+    "image": "assets/img/recettes/gratin_courgettes.webp",
     "note": "4.6",
     "votes": "119",
     "auteur": "Isabelle",
@@ -265,7 +265,7 @@
   },
   {
     "titre": "Gratin dauphinois",
-    "image": "assets/img/recettes/gratin_dauphinois.jpg",
+    "image": "assets/img/recettes/gratin_dauphinois.webp",
     "note": "4.9",
     "votes": "247",
     "auteur": "Bernard",
@@ -273,7 +273,7 @@
   },
   {
     "titre": "Guacamole express",
-    "image": "assets/img/recettes/guacamole_express.png",
+    "image": "assets/img/recettes/guacamole_express.webp",
     "note": "4.7",
     "votes": "134",
     "auteur": "Elena",
@@ -281,7 +281,7 @@
   },
   {
     "titre": "Lasagnes bolognaise",
-    "image": "assets/img/recettes/lasagnes_bolognaise.jpg",
+    "image": "assets/img/recettes/lasagnes_bolognaise.webp",
     "note": "4.9",
     "votes": "278",
     "auteur": "Rosa",
@@ -289,7 +289,7 @@
   },
   {
     "titre": "Lasagnes végétariennes",
-    "image": "assets/img/recettes/lasagnes_vegetariennes.jpg",
+    "image": "assets/img/recettes/lasagnes_vegetariennes.webp",
     "note": "4.7",
     "votes": "142",
     "auteur": "Zoé",
@@ -297,7 +297,7 @@
   },
   {
     "titre": "Macaronis au fromage",
-    "image": "assets/img/recettes/macaronis_fromage.jpg",
+    "image": "assets/img/recettes/macaronis_fromage.webp",
     "note": "4.8",
     "votes": "198",
     "auteur": "Dylan",
@@ -305,7 +305,7 @@
   },
   {
     "titre": "Mini feuilleté fromage",
-    "image": "assets/img/recettes/mini_feuillete_fromage.jpg",
+    "image": "assets/img/recettes/mini_feuillete_fromage.webp",
     "note": "4.6",
     "votes": "103",
     "auteur": "Sandrine",
@@ -313,7 +313,7 @@
   },
   {
     "titre": "Mini pizzas maison",
-    "image": "assets/img/recettes/mini_pizzas_maison.jpg",
+    "image": "assets/img/recettes/mini_pizzas_maison.webp",
     "note": "4.7",
     "votes": "156",
     "auteur": "Tony",
@@ -321,7 +321,7 @@
   },
   {
     "titre": "Mousse au chocolat",
-    "image": "assets/img/recettes/mousse_chocolat.jpg",
+    "image": "assets/img/recettes/mousse_chocolat.webp",
     "note": "4.9",
     "votes": "224",
     "auteur": "Christine",
@@ -329,7 +329,7 @@
   },
   {
     "titre": "Omelette fines herbes",
-    "image": "assets/img/recettes/omelette_fines_herbes.jpg",
+    "image": "assets/img/recettes/omelette_fines_herbes.webp",
     "note": "4.5",
     "votes": "88",
     "auteur": "Patricia",
@@ -337,7 +337,7 @@
   },
   {
     "titre": "Omelette fromage",
-    "image": "assets/img/recettes/omelette_fromage.jpg",
+    "image": "assets/img/recettes/omelette_fromage.webp",
     "note": "4.4",
     "votes": "76",
     "auteur": "Franck",
@@ -345,7 +345,7 @@
   },
   {
     "titre": "Pancakes",
-    "image": "assets/img/recettes/pancakes.jpg",
+    "image": "assets/img/recettes/pancakes.webp",
     "note": "4.9",
     "votes": "267",
     "auteur": "Amélie",
@@ -353,7 +353,7 @@
   },
   {
     "titre": "Pâte arrabiata",
-    "image": "assets/img/recettes/pate_arrabiata.jpg",
+    "image": "assets/img/recettes/pate_arrabiata.webp",
     "note": "4.6",
     "votes": "112",
     "auteur": "Luca",
@@ -361,7 +361,7 @@
   },
   {
     "titre": "Pâte carbonara",
-    "image": "assets/img/recettes/pate_carbonara.jpg",
+    "image": "assets/img/recettes/pate_carbonara.webp",
     "note": "4.8",
     "votes": "243",
     "auteur": "Giulia",
@@ -369,7 +369,7 @@
   },
   {
     "titre": "Pâtes au pesto",
-    "image": "assets/img/recettes/pate_pesto.jpg",
+    "image": "assets/img/recettes/pate_pesto.webp",
     "note": "4.7",
     "votes": "167",
     "auteur": "Marco",
@@ -377,7 +377,7 @@
   },
   {
     "titre": "Pâtes citron parmesan",
-    "image": "assets/img/recettes/pates_citron_parmesan.jpg",
+    "image": "assets/img/recettes/pates_citron_parmesan.webp",
     "note": "4.7",
     "votes": "134",
     "auteur": "Alice",
@@ -385,7 +385,7 @@
   },
   {
     "titre": "Pâtes quatre fromages",
-    "image": "assets/img/recettes/pates_quatre_fromages.jpg",
+    "image": "assets/img/recettes/pates_quatre_fromages.webp",
     "note": "4.8",
     "votes": "189",
     "auteur": "Maxime",
@@ -393,7 +393,7 @@
   },
   {
     "titre": "Pâtes au saumon",
-    "image": "assets/img/recettes/pates_saumon.jpg",
+    "image": "assets/img/recettes/pates_saumon.webp",
     "note": "4.7",
     "votes": "145",
     "auteur": "Hélène",
@@ -401,7 +401,7 @@
   },
   {
     "titre": "Pâtes au thon",
-    "image": "assets/img/recettes/pates_thon.jpg",
+    "image": "assets/img/recettes/pates_thon.webp",
     "note": "4.5",
     "votes": "98",
     "auteur": "Stéphane",
@@ -409,7 +409,7 @@
   },
   {
     "titre": "Poisson citron",
-    "image": "assets/img/recettes/poisson_citron.jpg",
+    "image": "assets/img/recettes/poisson_citron.webp",
     "note": "4.6",
     "votes": "87",
     "auteur": "Marine",
@@ -417,7 +417,7 @@
   },
   {
     "titre": "Poisson pané maison",
-    "image": "assets/img/recettes/poisson_pane_maison.jpg",
+    "image": "assets/img/recettes/poisson_pane_maison.webp",
     "note": "4.5",
     "votes": "76",
     "auteur": "Bertrand",
@@ -425,7 +425,7 @@
   },
   {
     "titre": "Poulet crème",
-    "image": "assets/img/recettes/poulet_creme.jpg",
+    "image": "assets/img/recettes/poulet_creme.webp",
     "note": "4.7",
     "votes": "132",
     "auteur": "Virginie",
@@ -433,7 +433,7 @@
   },
   {
     "titre": "Poulet curry coco",
-    "image": "assets/img/recettes/poulet_curry_coco.jpg",
+    "image": "assets/img/recettes/poulet_curry_coco.webp",
     "note": "4.8",
     "votes": "156",
     "auteur": "Sonia",
@@ -441,7 +441,7 @@
   },
   {
     "titre": "Purée maison",
-    "image": "assets/img/recettes/puree_maison.jpg",
+    "image": "assets/img/recettes/puree_maison.webp",
     "note": "4.7",
     "votes": "143",
     "auteur": "Gérard",
@@ -449,7 +449,7 @@
   },
   {
     "titre": "Quiche lorraine",
-    "image": "assets/img/recettes/quiche_lorraine.jpg",
+    "image": "assets/img/recettes/quiche_lorraine.webp",
     "note": "4.8",
     "votes": "198",
     "auteur": "Martine",
@@ -457,7 +457,7 @@
   },
   {
     "titre": "Quinoa légumes rôtis",
-    "image": "assets/img/recettes/quinoa_legumes_rotis.jpg",
+    "image": "assets/img/recettes/quinoa_legumes_rotis.webp",
     "note": "4.6",
     "votes": "112",
     "auteur": "Cécile",
@@ -465,7 +465,7 @@
   },
   {
     "titre": "Ratatouille au four",
-    "image": "assets/img/recettes/ratatouille_four.jpg",
+    "image": "assets/img/recettes/ratatouille_four.webp",
     "note": "4.7",
     "votes": "134",
     "auteur": "René",
@@ -481,7 +481,7 @@
   },
   {
     "titre": "Risotto champignons",
-    "image": "assets/img/recettes/risotto_champignons.jpg",
+    "image": "assets/img/recettes/risotto_champignons.webp",
     "note": "4.8",
     "votes": "178",
     "auteur": "Giorgio",
@@ -489,7 +489,7 @@
   },
   {
     "titre": "Riz cantonnais",
-    "image": "assets/img/recettes/riz_cantonais.jpg",
+    "image": "assets/img/recettes/riz_cantonais.webp",
     "note": "4.7",
     "votes": "156",
     "auteur": "Lin",
@@ -505,7 +505,7 @@
   },
   {
     "titre": "Salade avocat tomate",
-    "image": "assets/img/recettes/salade_avocat_tomate.jpg",
+    "image": "assets/img/recettes/salade_avocat_tomate.webp",
     "note": "4.6",
     "votes": "112",
     "auteur": "Océane",
@@ -513,7 +513,7 @@
   },
   {
     "titre": "Salade César",
-    "image": "assets/img/recettes/salade_cesar.jpg",
+    "image": "assets/img/recettes/salade_cesar.webp",
     "note": "4.7",
     "votes": "145",
     "auteur": "Julien",
@@ -529,7 +529,7 @@
   },
   {
     "titre": "Salade composée chèvre",
-    "image": "assets/img/recettes/salade_composee_chevre.jpg",
+    "image": "assets/img/recettes/salade_composee_chevre.webp",
     "note": "4.5",
     "votes": "87",
     "auteur": "Brigitte",
@@ -537,7 +537,7 @@
   },
   {
     "titre": "Salade grecque",
-    "image": "assets/img/recettes/salade_grecque.jpg",
+    "image": "assets/img/recettes/salade_grecque.webp",
     "note": "4.7",
     "votes": "134",
     "auteur": "Nikos",
@@ -545,7 +545,7 @@
   },
   {
     "titre": "Salade de lentilles",
-    "image": "assets/img/recettes/salade_lentilles.jpg",
+    "image": "assets/img/recettes/salade_lentilles.webp",
     "note": "4.5",
     "votes": "89",
     "auteur": "Awa",
@@ -553,7 +553,7 @@
   },
   {
     "titre": "Salade melon feta",
-    "image": "assets/img/recettes/salade_melon_feta.jpg",
+    "image": "assets/img/recettes/salade_melon_feta.webp",
     "note": "4.6",
     "votes": "76",
     "auteur": "Chloé",
@@ -561,7 +561,7 @@
   },
   {
     "titre": "Salade de pâtes",
-    "image": "assets/img/recettes/salade_pates.jpg",
+    "image": "assets/img/recettes/salade_pates.webp",
     "note": "4.5",
     "votes": "94",
     "auteur": "Théo",
@@ -569,7 +569,7 @@
   },
   {
     "titre": "Salade pois chiches",
-    "image": "assets/img/recettes/salade_pois_chiches.jpg",
+    "image": "assets/img/recettes/salade_pois_chiches.webp",
     "note": "4.6",
     "votes": "103",
     "auteur": "Fatima",
@@ -577,7 +577,7 @@
   },
   {
     "titre": "Salade pommes de terre",
-    "image": "assets/img/recettes/salade_pommes_terre.jpg",
+    "image": "assets/img/recettes/salade_pommes_terre.webp",
     "note": "4.5",
     "votes": "87",
     "auteur": "Denise",
@@ -585,7 +585,7 @@
   },
   {
     "titre": "Salade de quinoa",
-    "image": "assets/img/recettes/salade_quinoa.jpg",
+    "image": "assets/img/recettes/salade_quinoa.webp",
     "note": "4.6",
     "votes": "103",
     "auteur": "Inès",
@@ -593,7 +593,7 @@
   },
   {
     "titre": "Salade de riz",
-    "image": "assets/img/recettes/salade_riz.jpg",
+    "image": "assets/img/recettes/salade_riz.webp",
     "note": "4.5",
     "votes": "91",
     "auteur": "Mathieu",
@@ -601,7 +601,7 @@
   },
   {
     "titre": "Sandwich club",
-    "image": "assets/img/recettes/sandwich_club.jpg",
+    "image": "assets/img/recettes/sandwich_club.webp",
     "note": "4.6",
     "votes": "118",
     "auteur": "Kevin",
@@ -609,7 +609,7 @@
   },
   {
     "titre": "Smoothie fruit rouge",
-    "image": "assets/img/recettes/smoothie_fruit_rouge.jpg",
+    "image": "assets/img/recettes/smoothie_fruit_rouge.webp",
     "note": "4.7",
     "votes": "134",
     "auteur": "Léonie",
@@ -617,7 +617,7 @@
   },
   {
     "titre": "Soufflé fromage",
-    "image": "assets/img/recettes/souffle_fromage.jpg",
+    "image": "assets/img/recettes/souffle_fromage.webp",
     "note": "4.7",
     "votes": "98",
     "auteur": "Geneviève",
@@ -625,7 +625,7 @@
   },
   {
     "titre": "Soupe de courgettes",
-    "image": "assets/img/recettes/soupe_courgettes.jpg",
+    "image": "assets/img/recettes/soupe_courgettes.webp",
     "note": "4.6",
     "votes": "112",
     "auteur": "Véronique",
@@ -633,7 +633,7 @@
   },
   {
     "titre": "Soupe de légumes",
-    "image": "assets/img/recettes/soupe_legumes.jpg",
+    "image": "assets/img/recettes/soupe_legumes.webp",
     "note": "4.7",
     "votes": "143",
     "auteur": "Colette",
@@ -641,7 +641,7 @@
   },
   {
     "titre": "Soupe miso",
-    "image": "assets/img/recettes/soupe_miso.jpg",
+    "image": "assets/img/recettes/soupe_miso.webp",
     "note": "4.6",
     "votes": "89",
     "auteur": "Yuki",
@@ -649,7 +649,7 @@
   },
   {
     "titre": "Soupe patate douce",
-    "image": "assets/img/recettes/soupe_patate_douce.jpg",
+    "image": "assets/img/recettes/soupe_patate_douce.webp",
     "note": "4.8",
     "votes": "167",
     "auteur": "Aurore",
@@ -657,7 +657,7 @@
   },
   {
     "titre": "Soupe potiron",
-    "image": "assets/img/recettes/soupe_potiron.jpg",
+    "image": "assets/img/recettes/soupe_potiron.webp",
     "note": "4.8",
     "votes": "189",
     "auteur": "Suzanne",
@@ -665,7 +665,7 @@
   },
   {
     "titre": "Soupe tomate",
-    "image": "assets/img/recettes/soupe_tomate.jpg",
+    "image": "assets/img/recettes/soupe_tomate.webp",
     "note": "4.6",
     "votes": "112",
     "auteur": "Margot",
@@ -673,7 +673,7 @@
   },
   {
     "titre": "Tacos poulet",
-    "image": "assets/img/recettes/tacos_poulet.jpg",
+    "image": "assets/img/recettes/tacos_poulet.webp",
     "note": "4.7",
     "votes": "156",
     "auteur": "Nassim",
@@ -681,7 +681,7 @@
   },
   {
     "titre": "Tacos végétariens",
-    "image": "assets/img/recettes/tacos_vegetariens.jpg",
+    "image": "assets/img/recettes/tacos_vegetariens.webp",
     "note": "4.6",
     "votes": "98",
     "auteur": "Inaya",
@@ -689,7 +689,7 @@
   },
   {
     "titre": "Tapenade noire",
-    "image": "assets/img/recettes/tapenade_noire.jpg",
+    "image": "assets/img/recettes/tapenade_noire.webp",
     "note": "4.5",
     "votes": "76",
     "auteur": "Marcel",
@@ -697,7 +697,7 @@
   },
   {
     "titre": "Tarte aux pommes",
-    "image": "assets/img/recettes/tarte_pommes.jpg",
+    "image": "assets/img/recettes/tarte_pommes.webp",
     "note": "4.9",
     "votes": "234",
     "auteur": "Jacqueline",
@@ -705,7 +705,7 @@
   },
   {
     "titre": "Tarte tomate moutarde",
-    "image": "assets/img/recettes/tarte_tomate_moutarde.jpg",
+    "image": "assets/img/recettes/tarte_tomate_moutarde.webp",
     "note": "4.7",
     "votes": "123",
     "auteur": "Sylvie",
@@ -713,7 +713,7 @@
   },
   {
     "titre": "Tian de légumes",
-    "image": "assets/img/recettes/tian_legumes.jpg",
+    "image": "assets/img/recettes/tian_legumes.webp",
     "note": "4.6",
     "votes": "98",
     "auteur": "Fernand",
@@ -721,7 +721,7 @@
   },
   {
     "titre": "Tiramisu",
-    "image": "assets/img/recettes/tiramisu.jpg",
+    "image": "assets/img/recettes/tiramisu.webp",
     "note": "4.9",
     "votes": "312",
     "auteur": "Alex Williams",
@@ -729,7 +729,7 @@
   },
   {
     "titre": "Velouté carotte",
-    "image": "assets/img/recettes/veloute_carotte.jpg",
+    "image": "assets/img/recettes/veloute_carotte.webp",
     "note": "4.7",
     "votes": "145",
     "auteur": "Bernadette",
@@ -737,7 +737,7 @@
   },
   {
     "titre": "Velouté poireaux",
-    "image": "assets/img/recettes/veloute_poireaux.jpg",
+    "image": "assets/img/recettes/veloute_poireaux.webp",
     "note": "4.6",
     "votes": "112",
     "auteur": "Édith",
@@ -745,7 +745,7 @@
   },
   {
     "titre": "Wok légumes",
-    "image": "assets/img/recettes/wok_legume.jpg",
+    "image": "assets/img/recettes/wok_legume.webp",
     "note": "4.7",
     "votes": "134",
     "auteur": "Chen",
@@ -753,7 +753,7 @@
   },
   {
     "titre": "Wrap poulet croustillant",
-    "image": "assets/img/recettes/wrap_poulet_croustillant.jpg",
+    "image": "assets/img/recettes/wrap_poulet_croustillant.webp",
     "note": "4.7",
     "votes": "145",
     "auteur": "Jordan",
@@ -761,7 +761,7 @@
   },
   {
     "titre": "Wrap végétarien",
-    "image": "assets/img/recettes/wrap_vegetarien.png",
+    "image": "assets/img/recettes/wrap_vegetarien.webp",
     "note": "4.6",
     "votes": "112",
     "auteur": "Yasmine",

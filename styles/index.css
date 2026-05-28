@@ -371,7 +371,7 @@ footer p {
 }
 
 .main-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img/buffetcrush.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img/buffetcrush.webp) center/cover no-repeat;
   padding: 30px;
   width: 95%;
   margin: 0 auto;
@@ -1222,7 +1222,7 @@ main form .btn {
   padding: 20px 45px;
 }
 .signIn .imgSignUp {
-  background: url(/assets/img/ramen.jpg) no-repeat center/cover;
+  background: url(/assets/img/ramen.webp) no-repeat center/cover;
   width: 90%;
   height: 100%;
   border-radius: 50px;
@@ -2246,7 +2246,7 @@ main form .btn {
   padding: 20px 45px;
 }
 .signUp .imgSignUp {
-  background: url(/assets/img/ramen.jpg) no-repeat center/cover;
+  background: url(/assets/img/ramen.webp) no-repeat center/cover;
   width: 90%;
   height: 100%;
   border-radius: 50px;
