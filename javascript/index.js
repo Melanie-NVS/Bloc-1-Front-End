@@ -157,7 +157,7 @@ if (grille) {
         carte.innerHTML = `
           <div class="image-box">
             <a href="${estDansSousPage ? './recipe.html' : './pages_html/recipe.html'}">
-              <img src="${prefixeImage}${recette.image}" alt="${recette.titre}">
+              <img src="${prefixeImage}${recette.image}" alt="${recette.titre}" loading="lazy">
             </a>
             <button class="coeur" aria-label="Ajouter aux favoris">
               <i class="fa-solid fa-heart"></i>

@@ -1708,7 +1708,7 @@ main form .btn {
 }
 .section-recette .bloc-commentaires-global .bloc-commentaires .commentaire .entete-commentaire .infos-commentaire .date-commentaire {
   font-size: 1.2rem;
-  color: #8a8a8a;
+  color: #666666;
   margin-bottom: 8px;
 }
 .section-recette .bloc-commentaires-global .bloc-commentaires .commentaire .entete-commentaire .infos-commentaire .note-commentaire {
@@ -1822,7 +1822,7 @@ main form .btn {
 }
 .section-recette .bloc-etapes .bloc-commentaires .commentaire .entete-commentaire .infos-commentaire .date-commentaire {
   font-size: 1.2rem;
-  color: #8a8a8a;
+  color: #666666;
   margin-bottom: 8px;
 }
 .section-recette .bloc-etapes .bloc-commentaires .commentaire .entete-commentaire .infos-commentaire .note-commentaire {
