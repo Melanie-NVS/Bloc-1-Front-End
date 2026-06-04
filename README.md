@@ -252,9 +252,9 @@ Bloc-1-Front-End/
 ├── assets/
 │   ├── fonts/
 │   │   ├── Allura-Regular.woff2
-│   │   ├── Inter_18pt-Regular.woff2
+│   │   ├── Inter_18pt-Light.woff2
 │   │   ├── OpenDyslexic-Regular.woff2
-│   │   └── Poppins-Regular.woff2
+│   │   └── Poppins-Light.woff2
 │   └── img/
 │       ├── buffetcrush.webp
 │       ├── femme.webp
