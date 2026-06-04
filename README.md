@@ -85,7 +85,7 @@ Le site ne possède pas de base de données ni de back-end : toutes les fonction
 
 ## Librairies
 - Font Awesome 7 (icônes)
-- Google Fonts (Inter, Poppins, Allura)
+- Google Fonts : Inter, Poppins, Allura (hébergées en local en WOFF2)
 - OpenDyslexic (accessibilité dyslexie)
 
 ## Outils
@@ -224,6 +224,7 @@ Un menu hamburger est intégré pour les écrans mobiles (≤ 744px).
 | Ancres intra-page | `#etapes`, `#ingredients`, `#commentaires` sur `recipe.html` |
 | Balises sémantiques | `article`, `aside`, `nav`, `section` |
 | Navigation entre pages | Liens fonctionnels sur toutes les pages |
+| Optimisation performances | Images WebP compressées, polices WOFF2, preload Font Awesome |
 
 ---
 
@@ -250,15 +251,15 @@ Bloc-1-Front-End/
 │
 ├── assets/
 │   ├── fonts/
-│   │   ├── Allura-Regular.ttf
-│   │   ├── Inter_18pt-Regular.ttf
-│   │   ├── OpenDyslexic-Regular.otf
-│   │   └── Poppins-Regular.ttf
+│   │   ├── Allura-Regular.woff2
+│   │   ├── Inter_18pt-Light.woff2
+│   │   ├── OpenDyslexic-Regular.woff2
+│   │   └── Poppins-Light.woff2
 │   └── img/
-│       ├── buffetcrush.jpg
-│       ├── femme.jpg
-│       ├── homme.jpg
-│       ├── woman.jpg
+│       ├── buffetcrush.webp
+│       ├── femme.webp
+│       ├── homme.webp
+│       ├── woman.webp
 │       └── recettes/         → 96 images de recettes
 │
 ├── javascript/
