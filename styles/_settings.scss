@@ -54,81 +54,8 @@ body.dyslexic {
   border-radius: 4px;
 }
 
-// @mixin flexCenter {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-
-// RESPONSIVE GLOBAL 
-
-
-// @media screen and (max-width: 1024px) {
-//   nav {
-//     width: 95%;
-
-//     ul {
-//       gap: 1.5rem;
-//     }
-//   }
-
-//   .grille {
-//     grid-template-columns: repeat(2, 1fr);
-//     gap: 20px;
-//   }
-// }
-
-// @media screen and (max-width: 768px) {
-//   nav {
-//     flex-direction: column;
-//     height: auto;
-//     gap: 20px;
-//     padding: 20px 0;
-
-//     ul {
-//       flex-direction: column;
-//       gap: 1rem;
-//     }
-//   }
-
-//   .grille {
-//     grid-template-columns: 1fr;
-//   }
-
-//   .carte {
-//     width: 100%;
-//   }
-
-//   .tri {
-//     width: 100%;
-//     justify-content: center;
-//   }
-
-//   .menu {
-//     width: 100%;
-//   }
-
-//   h1,
-//   h2,
-//   p {
-//     text-align: center;
-//   }
-// }
-
-// @media screen and (max-width: 480px) {
-//   nav {
-//     width: 100%;
-//   }
-
-//   .carte img {
-//     height: 220px;
-//     object-fit: cover;
-//   }
-
-//   button,
-//   input,
-//   textarea {
-//     width: 100%;
-//   }
-// }
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
