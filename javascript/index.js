@@ -1,12 +1,12 @@
 //POUR LE TRI (RECENT, ENTREE, PLAT, DESSERT)
-const btn = document.getElementById("btnTri");
-const triLabel = document.getElementById("triLabel");
-let menuOuvert = false;
-let appliquerFiltreTri = null;
+const btn = document.getElementById("btnTri"); // le bouton "Trier"
+const triLabel = document.getElementById("triLabel"); // le texte affiché dans le bouton
+let menuOuvert = false; // mémorise si le menu déroulant est ouvert
+let appliquerFiltreTri = null; //"boîte vide" : sera remplie plus tard par le fetch
 
-if (btn && triLabel) {
+if (btn && triLabel) { // sécurité : on n'exécute que si les éléments existent sur la page
   btn.addEventListener("click", (event) => {
-    event.stopPropagation();
+    event.stopPropagation(); // empêche le clic de remonter jusqu'au document
     const triDiv = btn.parentElement;
 
     if (!menuOuvert) {
@@ -21,24 +21,25 @@ if (btn && triLabel) {
       triDiv.appendChild(menu);
       menu.addEventListener("click", (e) => {
         e.stopPropagation();
-        const valeur = e.target.dataset.value;
-        if (!valeur) return;
-        triLabel.textContent = e.target.textContent;
-        menu.remove();
+        const valeur = e.target.dataset.value; // récupère l'attribut data-value du <li> cliqué
+        if (!valeur) return; // clic dans le vide (le <ul> lui-même) → on ignore
+        triLabel.textContent = e.target.textContent; // le bouton affiche l'option choisie
+        menu.remove(); // on supprime le menu du DOM
         menuOuvert = false;
-        if (appliquerFiltreTri) {
+        if (appliquerFiltreTri) { // si le fetch est terminé, la fonction existe → on filtre
           appliquerFiltreTri(valeur);
         }
       });
       menuOuvert = true;
     } else {
+      // --- 2e clic sur le bouton : on referme ---
       const menu = document.querySelector(".menu");
       if (menu) menu.remove();
       menuOuvert = false;
     }
   });
 }
-
+// Clic n'importe où sur la page → on ferme le menu de tri
 document.addEventListener("click", () => {
   const menu = document.querySelector(".menu");
   if (menu) {
@@ -51,7 +52,7 @@ document.addEventListener("click", () => {
 // LISTE DE TYPE DE PLATS
 const btnTypes = document.getElementById("btnTypes");
 const listeTypes = document.getElementById("listeTypes");
-const iconeToggle = document.getElementById("iconeToggle");
+const iconeToggle = document.getElementById("iconeToggle");  // l'icône Font Awesome + ou -
 
 if (btnTypes) {
   btnTypes.addEventListener("click", () => {
@@ -89,6 +90,7 @@ if (form && confirmation) {
 }
 
 // -------------------------------------------------------
+// ajouter aria label
 // Menu hamburger
 const hamburger = document.querySelector('.hamburger');
 const navLeft = document.querySelector('.nav-left');
